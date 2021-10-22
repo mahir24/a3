@@ -1,0 +1,6257 @@
+Script started on 2021-10-22 04:42:10+00:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="211" LINES="61"]
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ ls
+CUSTOMERS  PRODUCTS  a3.txt  a3_part2.txt  a3_part3.txt
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ cd ..
+]0;rahman@f6linux20: ~rahman@f6linux20:~$ cd A1
+]0;rahman@f6linux20: ~/A1rahman@f6linux20:~/A1$ l
+total 788
+  4 drwxrwxr-x  2 rahman rahman   4096 Sep 12 01:02 temp1
+  4 drwxrwxr-x  3 rahman rahman   4096 Sep 12 01:43 temp2
+736 -rw-rw-r--  1 rahman rahman 752821 Sep 12 02:13 a1.txt
+ 28 -rw-r--r--  1 rahman rahman  28672 Sep 12 02:16 .a1.txt.swp
+  4 drwxrwxr-x  5 rahman rahman   4096 Sep 12 02:20 .
+  4 drwxrwxr-x  8 rahman rahman   4096 Sep 12 02:22 .git
+  4 -rw-rw-r--  1 rahman rahman     28 Oct  8 01:32 cmds.log
+  4 drwxr-xr-x 16 rahman rahman   4096 Oct 22 03:43 ..
+]0;rahman@f6linux20: ~/A1rahman@f6linux20:~/A1$ cd ..
+]0;rahman@f6linux20: ~rahman@f6linux20:~$ cd A2
+]0;rahman@f6linux20: ~/A2rahman@f6linux20:~/A2$ l
+total 3233780
+   1896 -rw-rw-r--  1 rahman rahman    1939375 Mar 16  2018  datamash-1.3.tar.gz
+3162800 -rw-rw-r--  1 rahman rahman 3238702530 Sep 30 04:42  amazon_reviews_us_Books_v1_02.tsv
+  51492 -rw-rw-r--  1 rahman rahman   52725894 Sep 30 05:05  customerids.txt.sorted.uniqcount.reversed
+  14468 -rw-rw-r--  1 rahman rahman   14814946 Sep 30 05:05  productids.txt.sorted.uniqcount.reversed
+   3032 -rw-rw-r--  1 rahman rahman    3101523 Oct  1 00:55  customerids.txt
+      4 -rw-rw-r--  1 rahman rahman       1700 Oct  1 01:12  customerids.100.txt
+      4 -rw-rw-r--  1 rahman rahman       1900 Oct  1 03:37  productids.100.txt
+      4 drwxrwxr-x  2 rahman rahman       4096 Oct  1 03:49  tempProducts
+      4 drwxrwxr-x  2 rahman rahman       4096 Oct  1 05:39  tempCustomers
+      4 drwxrwxr-x 12 rahman rahman       4096 Oct  1 05:56  datamash-1.3
+     12 drwxrwxr-x  3 rahman rahman      12288 Oct  1 07:35  PRODUCTS
+      0 -rw-rw-r--  1 rahman rahman          0 Oct  2 03:47  test.txt
+      0 -rw-rw-r--  1 rahman rahman          0 Oct  2 03:47 'total='
+      0 -rw-rw-r--  1 rahman rahman          0 Oct  2 03:47  echo
+      0 -rw-rw-r--  1 rahman rahman          0 Oct  2 03:47  done
+      4 drwxrwxr-x  2 rahman rahman       4096 Oct  2 04:04  CUSTOMERS
+     40 -rw-rw-r--  1 rahman rahman      40488 Oct  2 05:54  cmds.log
+      4 drwxrwxr-x  8 rahman rahman       4096 Oct  2 05:56  .git
+      4 drwxrwxr-x  9 rahman rahman       4096 Oct 22 03:03  .
+      4 drwxrwxr-x 12 rahman rahman       4096 Oct 22 03:03  A3
+      4 drwxr-xr-x 16 rahman rahman       4096 Oct 22 03:43  ..
+]0;rahman@f6linux20: ~/A2rahman@f6linux20:~/A2$ cp amazon_reviews_us_Books_v1_02.tsv ~/A3
+^C
+]0;rahman@f6linux20: ~/A2rahman@f6linux20:~/A2$  hed [K[Kad -n 1 amazon_reviews_us_Books_v1_02.tsv
+marketplace	customer_id	review_id	product_id	product_parent	product_title	product_category	star_rating	helpful_votes	total_votes	vine	verified_purchase	review_headline	review_body	review_date
+]0;rahman@f6linux20: ~/A2rahman@f6linux20:~/A2$ ak[Kwk '{print $14}',[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kawkw -F "/t[K[K\t" '{print $14}' amazon_reviews_us_Books_v1_02.tsv | head -n 10 > amazon_reviews_us_Books_v1_02.tsv[K[K[KREVIEWBODY.tsd[Kv
+
+Command 'awkw' not found, did you mean:
+
+  command 'awk' from deb gawk (1:5.0.1+dfsg-1)
+  command 'awk' from deb mawk (1.3.4.20200120-2)
+  command 'awk' from deb original-awk (2012-12-20-6)
+
+Try: apt install <deb name>
+
+]0;rahman@f6linux20: ~/A2rahman@f6linux20:~/A2$ awkw -F "\t" '{print $14}' amazon_reviews_us_Books_v1_02.tsv | head -n 10 > amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;rahman@f6linux20: ~/A2rahman@f6linux20:~/A2$ r, [K[Km  amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+]0;rahman@f6linux20: ~/A2rahman@f6linux20:~/A2$ awk -F "\t" '{print $14}' amazon_reviews_us_Books_v1_02.tsv | head -n 10 > amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv~amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv/amazon_reviews_us_Books_v1_02.REVIEWBODY.tsvAamazon_reviews_us_Books_v1_02.REVIEWBODY.tsv3amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv/amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+]0;rahman@f6linux20: ~/A2rahman@f6linux20:~/A2$ cd ..[K[K~/A3
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ ls
+CUSTOMERS  PRODUCTS  a3.txt  a3_part2.txt  a3_part3.txt  amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv  amazon_reviews_us_Books_v1_02.tsv
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ r,[Km amazon_reviews_us_Books_v1_02.tsv
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ cat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+review_body
+this boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.
+If you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.
+never read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say
+Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape a pregnant Tasha.<br /><br />Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father a veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman's long ago murdered first husband James, and her dad's first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.<br /><br />Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'S BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  A final twist marks a strong Webb of deceit tale that showcases a fine author on her A-game.<br /><br />Harriet Klausner
+Review based on a cursory examination by University of Phoenix students in Philosophy 251.  <br />We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. <br />The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in a clear and concise manner. <br />We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. <br />
+My only complaint is that this book was a bit repetative, and Holden's vocabulary only consists of 4 words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.<br /><br />It was easy to read and to relate to, so you should pick it up if you're looking for a fun read. Some people complain about the lack of a plot, but to understand this book you need to read deeper into it. It's actually a lot more than some annoying kid's list of complaints about life.<br /><br />The story is about Holden Caulfield's coming of age and realizing that growing up is not a process that can be stopped. He had a lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from a mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those 3 days.
+This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  I was sort of surprised however by the comment in Publisher's Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can't deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  I never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, I actually thought that she \\"lucked out\\" in a sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained a job right away, it would have taken away the whole raison d'etre of the book.  It would have been a completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, I think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, I thought those comments were bizarre.  I agree with Ms. Ehrenreich's point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it's really a pretty scary and depressing book, but one which I recommend.
+When looking for &lt;a href=\\"[...]\\">lock picking books&lt;/a>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not a romance novel, it's how to open locks without keys, and that's it. You will learn what you need to here. But you should always seek out more knowledge.
+Never been much for enjoying history, but the style, brevity, and choice of subject matter come together very nicely in this book.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$   tr " " "\n" < myfile.txt[C[K[K[K[K[K[K[K[K[K[K[K[Kamazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+tr: extra operand amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+Try 'tr --help' for more information.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ ca[K[Kcat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Prm amazon_reviews_us_Books_v1_02.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+review_body
+this boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.
+If you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.
+never read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say
+Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape a pregnant Tasha.<br /><br />Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father a veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman's long ago murdered first husband James, and her dad's first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.<br /><br />Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'S BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  A final twist marks a strong Webb of deceit tale that showcases a fine author on her A-game.<br /><br />Harriet Klausner
+Review based on a cursory examination by University of Phoenix students in Philosophy 251.  <br />We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. <br />The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in a clear and concise manner. <br />We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. <br />
+My only complaint is that this book was a bit repetative, and Holden's vocabulary only consists of 4 words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.<br /><br />It was easy to read and to relate to, so you should pick it up if you're looking for a fun read. Some people complain about the lack of a plot, but to understand this book you need to read deeper into it. It's actually a lot more than some annoying kid's list of complaints about life.<br /><br />The story is about Holden Caulfield's coming of age and realizing that growing up is not a process that can be stopped. He had a lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from a mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those 3 days.
+This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  I was sort of surprised however by the comment in Publisher's Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can't deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  I never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, I actually thought that she \\"lucked out\\" in a sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained a job right away, it would have taken away the whole raison d'etre of the book.  It would have been a completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, I think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, I thought those comments were bizarre.  I agree with Ms. Ehrenreich's point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it's really a pretty scary and depressing book, but one which I recommend.
+When looking for &lt;a href=\\"[...]\\">lock picking books&lt;/a>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not a romance novel, it's how to open locks without keys, and that's it. You will learn what you need to here. But you should always seek out more knowledge.
+Never been much for enjoying history, but the style, brevity, and choice of subject matter come together very nicely in this book.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ cat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Prm amazon_reviews_us_Books_v1_02.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Krm amazon_reviews_us_Books_v1_02.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K  tr " " "\n" < myfile.txt[K[K[K[K[K[K[K[K[K[Kamazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+review_body
+this
+boook
+was
+a
+great
+one
+that
+you
+could
+learn
+from.
+it
+not
+only
+teaches
+the
+imponrtance
+of
+family
+and
+their
+values
+but
+it
+also
+deals
+with
+basic
+issues
+that
+teens
+and
+some
+kids
+even
+deal
+with.
+
+this
+book
+is
+about
+4
+best
+friends
+who
+are
+for
+the
+first
+time
+in
+their
+lives
+spending
+their
+summer
+apart.
+one
+day
+they
+are
+all
+in
+one
+of
+the
+girls
+rooms
+and
+finds
+a
+pair
+of
+pants
+that
+were
+tucked
+away
+in
+her
+closet.
+
+once
+all
+four
+
+of
+them
+try
+them
+on
+they
+realize
+that
+there
+is
+really
+something
+special
+about
+these
+pants.
+
+seeming
+as
+how
+all
+4
+girls
+are
+differnt
+shapes
+and
+sizes
+and
+somehow
+the
+pants
+fit
+all
+of
+them,
+
+they
+realize
+that
+these
+pants
+were
+the
+start
+of
+something
+special.
+
+immediatley
+following
+they
+decided
+to
+make
+up
+certian
+rules
+abut
+the
+pants
+such
+as
+you
+must
+write
+the
+best
+thing
+u
+did
+while
+wearing
+the
+pants
+over
+your
+summer
+on
+the
+right
+leg
+and
+also
+some
+silly
+things
+such
+as
+to
+\\"never
+pick
+yuor
+nose
+while
+wearing
+the
+pants.\\"
+
+this
+book
+follows
+the
+girls
+throuh
+their
+summers
+in
+differnt
+places
+of
+the
+world
+and
+through
+all
+of
+the
+different
+obstacles
+that
+life
+takes
+them
+through.
+it
+can
+really
+teach
+you
+alot
+not
+only
+about
+what
+is
+going
+on
+around
+you
+but
+most
+imporntantly
+about
+yuorself.
+
+i
+would
+give
+this
+book
+4
+stars
+and
+would
+reccommend
+it
+to
+anyone
+who
+seems
+the
+slihgtest
+bit
+interested.
+If
+you
+are
+looking
+for
+something
+to
+stimulate
+your
+brain,
+this
+isn't
+it.
+
+However,
+if
+you
+are
+just
+looking
+for
+a
+good
+laugh,
+you'll
+enjoy
+The
+Bad
+Girl's
+Guide.
+
+It's
+funny
+and
+light,
+and
+definitely
+a
+good
+way
+to
+pass
+a
+little
+bit
+of
+time.
+never
+read
+it-a
+young
+relative
+idicated
+he
+liked
+it
+and
+somehow
+my
+name
+popped
+upon
+this--no
+more
+to
+say
+Though
+she
+is
+honored
+to
+be
+Chicago
+Woman
+of
+the
+Year,
+Victoria
+Colby-Camp
+is
+more
+euphoric
+over
+the
+mental
+improvement
+that
+her
+son
+Jim
+has
+shown
+recently
+especially
+since
+he
+and
+Tasha
+North
+fell
+in
+love.
+
+Jim
+was
+snatched
+almost
+twenty
+years
+ago
+when
+he
+was
+seven
+and
+turned
+into
+the
+killing
+Seth
+whose
+goal
+was
+to
+murder
+Victoria
+for
+abandoning
+him.
+
+However,
+her
+elation
+would
+turn
+to
+despair
+if
+she
+knew
+Seth
+resurfaced
+and
+started
+to
+rape
+a
+pregnant
+Tasha.<br
+/><br
+/>Former
+military
+strategist
+Daniel
+Marks
+is
+in
+town
+complements
+of
+the
+Colby
+Agency
+that
+wants
+to
+hire
+him.
+
+Also
+in
+Chicago
+is
+Emily
+Hastings
+whose
+father
+a
+veteran
+homicide
+detective
+was
+murdered.
+
+She
+finds
+letters
+linking
+her
+dad
+to
+Victoria,
+the
+woman's
+long
+ago
+murdered
+first
+husband
+James,
+and
+her
+dad's
+first
+partner
+Marelyn
+Rutland
+that
+confuses
+her.
+
+Soon
+she
+will
+meet
+Daniel
+and
+they
+will
+be
+embroiled
+in
+the
+COLBY
+CONSPIRACY
+that
+goes
+back
+almost
+two
+decades
+ago.<br
+/><br
+/>Though
+the
+subplots
+can
+become
+confusing
+at
+first,
+once
+the
+audience
+comprehends
+how
+this
+complex
+superb
+suspense
+thriller
+starts
+to
+come
+together,
+they
+will
+want
+more
+Colby
+Agency
+tales;
+(see
+FILES
+FROM
+THE
+COLBY
+AGENCY:
+THE
+BODYGUARD'S
+BABY
+PROTECTIVE
+CUSTODY).
+
+The
+ensemble
+cast
+is
+solid
+as
+fans
+will
+feel
+with
+Victoria
+who
+has
+overcome
+so
+much
+tragedy,
+hope
+Jim
+\\"defeats\\"
+Seth
+with
+Tasha
+at
+his
+side,
+and
+root
+for
+Daniel
+and
+Emily
+to
+make
+it
+while
+wondering
+what
+really
+happened
+two
+decades
+ago.
+
+A
+final
+twist
+marks
+a
+strong
+Webb
+of
+deceit
+tale
+that
+showcases
+a
+fine
+author
+on
+her
+A-game.<br
+/><br
+/>Harriet
+Klausner
+Review
+based
+on
+a
+cursory
+examination
+by
+University
+of
+Phoenix
+students
+in
+Philosophy
+251.
+
+<br
+/>We
+have
+found
+the
+book
+to
+be
+well
+organized,
+and
+detailed.
+The
+structure
+placed
+the
+information
+in
+an
+easy
+to
+read
+and
+presentable
+manner.
+<br
+/>The
+use
+of
+strong
+and
+sound
+proofs
+by
+experiment
+and
+examples
+supported
+the
+overall
+logic
+of
+reasoning
+in
+a
+clear
+and
+concise
+manner.
+<br
+/>We
+have
+found
+the
+book
+to
+be
+well
+thought
+out
+and
+laid
+out
+so
+the
+reader
+can
+learn
+and
+follow
+what
+is
+being
+explained.
+<br
+/>
+My
+only
+complaint
+is
+that
+this
+book
+was
+a
+bit
+repetative,
+and
+Holden's
+vocabulary
+only
+consists
+of
+4
+words:
+sonuvabitch,
+goddamn,
+lousy
+and
+phony.
+It
+was
+still
+quite
+humorous
+and
+the
+actual
+story
+was
+interesting.<br
+/><br
+/>It
+was
+easy
+to
+read
+and
+to
+relate
+to,
+so
+you
+should
+pick
+it
+up
+if
+you're
+looking
+for
+a
+fun
+read.
+Some
+people
+complain
+about
+the
+lack
+of
+a
+plot,
+but
+to
+understand
+this
+book
+you
+need
+to
+read
+deeper
+into
+it.
+It's
+actually
+a
+lot
+more
+than
+some
+annoying
+kid's
+list
+of
+complaints
+about
+life.<br
+/><br
+/>The
+story
+is
+about
+Holden
+Caulfield's
+coming
+of
+age
+and
+realizing
+that
+growing
+up
+is
+not
+a
+process
+that
+can
+be
+stopped.
+He
+had
+a
+lousy
+childhood,
+as
+he
+puts
+it,
+and
+wants
+to
+save
+other
+children
+from
+going
+though
+the
+things
+he
+experienced
+in
+his
+life.
+He
+is
+telling
+the
+story
+from
+a
+mental
+institution,
+which
+he
+was
+placed
+in
+after
+returning
+home
+from
+the
+fourth
+Prep
+school
+he
+had
+been
+kicked
+out
+of.
+He
+flashes
+back
+to
+the
+events
+leading
+up
+to
+his
+arrival
+at
+his
+home
+and
+tells
+the
+story
+of
+those
+3
+days.
+This
+book
+is
+chilling
+and
+depressing
+indeed,
+though
+very
+well
+written
+and
+sprinkled
+with
+frequent
+humor.
+
+I
+was
+sort
+of
+surprised
+however
+by
+the
+comment
+in
+Publisher's
+Weekly
+which
+said
+that
+\\"PW
+suspects
+that
+many
+of
+those
+buyers
+will
+be
+disappointed.
+Ehrenreich
+can't
+deliver
+the
+promised
+story
+because
+she
+never
+managed
+to
+get
+employed
+in
+the
+'midlevel
+corporate
+world'
+she
+wanted
+to
+analyze.\\"
+
+I
+never
+viewed
+that
+as
+being
+the
+\\"promised
+story\\"
+in
+the
+first
+place.
+
+To
+me,
+the
+primary
+point
+of
+the
+book
+was
+to
+describe
+what
+it
+was
+like
+to
+actually
+try
+to
+ENTER
+that
+world
+in
+the
+first
+place
+rather
+than
+describing
+what
+life
+was
+like
+when
+she
+got
+there--and
+that
+she
+did.
+
+In
+fact,
+I
+actually
+thought
+that
+she
+\\"lucked
+out\\"
+in
+a
+sense
+by
+having
+the
+bizarre,
+surreal
+experiences
+she
+did--not
+only
+did
+it
+make
+for
+more
+entertaining
+and
+more
+thought-provoking
+reading,
+but
+in
+my
+mind,
+if
+she
+HAD
+obtained
+a
+job
+right
+away,
+it
+would
+have
+taken
+away
+the
+whole
+raison
+d'etre
+of
+the
+book.
+
+It
+would
+have
+been
+a
+completely
+different
+book
+in
+which
+she
+merely
+described
+her
+(presumably)
+boring
+mid-level
+corporate
+job,
+which
+probably
+would
+have
+been
+the
+same
+from
+day
+to
+day.
+
+Thus,
+at
+least
+for
+purposes
+of
+writing
+the
+book,
+I
+think
+she
+was
+\\"lucky\\"
+that
+things
+worked
+out
+the
+way
+they
+did.
+
+As
+for
+the
+reader
+who
+criticized
+her
+for
+not
+taking
+the
+\\"jobs\\"
+offered
+by
+AFLAC
+and
+Mary
+Kay,
+I
+thought
+those
+comments
+were
+bizarre.
+
+I
+agree
+with
+Ms.
+Ehrenreich's
+point
+in
+that
+\\"jobs\\"
+such
+as
+these
+in
+which
+the
+employer
+offers
+no
+salary,
+no
+benefits,
+no
+office,
+no
+help
+and
+essentially
+takes
+no
+risk
+whatsoever
+can
+hardly
+be
+considered
+jobs
+in
+the
+traditional
+sense
+she
+was
+seeking.
+
+In
+any
+event,
+it's
+really
+a
+pretty
+scary
+and
+depressing
+book,
+but
+one
+which
+I
+recommend.
+When
+looking
+for
+&lt;a
+href=\\"[...]\\">lock
+picking
+books&lt;/a>,
+this
+one
+is
+very
+informative.
+It
+will
+give
+one
+great
+ideas
+on
+opening
+padlocks,
+but
+the
+language
+is
+very
+basic,
+no
+frills
+here.
+This
+is
+not
+a
+romance
+novel,
+it's
+how
+to
+open
+locks
+without
+keys,
+and
+that's
+it.
+You
+will
+learn
+what
+you
+need
+to
+here.
+But
+you
+should
+always
+seek
+out
+more
+knowledge.
+Never
+been
+much
+for
+enjoying
+history,
+but
+the
+style,
+brevity,
+and
+choice
+of
+subject
+matter
+come
+together
+very
+nicely
+in
+this
+book.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ cat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv | sort| uniq -c
+      1 If you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.
+      1 My only complaint is that this book was a bit repetative, and Holden's vocabulary only consists of 4 words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.<br /><br />It was easy to read and to relate to, so you should pick it up if you're looking for a fun read. Some people complain about the lack of a plot, but to understand this book you need to read deeper into it. It's actually a lot more than some annoying kid's list of complaints about life.<br /><br />The story is about Holden Caulfield's coming of age and realizing that growing up is not a process that can be stopped. He had a lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from a mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those 3 days.
+      1 Never been much for enjoying history, but the style, brevity, and choice of subject matter come together very nicely in this book.
+      1 Review based on a cursory examination by University of Phoenix students in Philosophy 251.  <br />We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. <br />The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in a clear and concise manner. <br />We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. <br />
+      1 This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  I was sort of surprised however by the comment in Publisher's Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can't deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  I never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, I actually thought that she \\"lucked out\\" in a sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained a job right away, it would have taken away the whole raison d'etre of the book.  It would have been a completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, I think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, I thought those comments were bizarre.  I agree with Ms. Ehrenreich's point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it's really a pretty scary and depressing book, but one which I recommend.
+      1 Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape a pregnant Tasha.<br /><br />Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father a veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman's long ago murdered first husband James, and her dad's first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.<br /><br />Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'S BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  A final twist marks a strong Webb of deceit tale that showcases a fine author on her A-game.<br /><br />Harriet Klausner
+      1 When looking for &lt;a href=\\"[...]\\">lock picking books&lt;/a>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not a romance novel, it's how to open locks without keys, and that's it. You will learn what you need to here. But you should always seek out more knowledge.
+      1 never read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say
+      1 review_body
+      1 this boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ cat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv | sort| uniq -c[C[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv | sort | uniq -c[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Prm amazon_reviews_us_Books_v1_02.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd ~/A3awk -F "\t" '{print $14}' amazon_reviews_us_Books_v1_02.tsv | head -n 10 > ~/A3/amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ~/A3[Kls[Krm amazon_reviews_us_Books_v1_02.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv | sort | uniq -c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ktr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n
+      1 &lt;a
+      1 'midlevel
+      1 (presumably)
+      1 (see
+      1 />
+      1 />Former
+      1 />Harriet
+      1 />It
+      1 />Though
+      1 251.
+      1 3
+      1 A
+      1 A-game.<br
+      1 AFLAC
+      1 AGENCY:
+      1 Also
+      1 As
+      1 BABY
+      1 BODYGUARD'S
+      1 Bad
+      1 But
+      1 CONSPIRACY
+      1 CUSTODY).
+      1 Caulfield's
+      1 Colby-Camp
+      1 ENTER
+      1 Ehrenreich
+      1 Ehrenreich's
+      1 FILES
+      1 FROM
+      1 Girl's
+      1 Guide.
+      1 HAD
+      1 Hastings
+      1 Holden
+      1 Holden's
+      1 If
+      1 James,
+      1 Kay,
+      1 Klausner
+      1 Marelyn
+      1 Marks
+      1 Mary
+      1 Ms.
+      1 My
+      1 Never
+      1 North
+      1 PROTECTIVE
+      1 Philosophy
+      1 Phoenix
+      1 Prep
+      1 Publisher's
+      1 Review
+      1 Rutland
+      1 She
+      1 Some
+      1 Soon
+      1 Tasha.<br
+      1 Though
+      1 Thus,
+      1 To
+      1 University
+      1 Victoria,
+      1 Webb
+      1 Weekly
+      1 When
+      1 Woman
+      1 Year,
+      1 You
+      1 \\"PW
+      1 \\"defeats\\"
+      1 \\"lucked
+      1 \\"lucky\\"
+      1 \\"never
+      1 \\"promised
+      1 abandoning
+      1 abut
+      1 actual
+      1 after
+      1 age
+      1 ago.
+      1 ago.<br
+      1 agree
+      1 alot
+      1 always
+      1 an
+      1 analyze.\\"
+      1 annoying
+      1 any
+      1 anyone
+      1 apart.
+      1 around
+      1 arrival
+      1 audience
+      1 author
+      1 away,
+      1 based
+      1 basic
+      1 basic,
+      1 because
+      1 become
+      1 benefits,
+      1 bizarre,
+      1 bizarre.
+      1 books&lt;/a>,
+      1 boook
+      1 boring
+      1 brain,
+      1 brevity,
+      1 buyers
+      1 can't
+      1 cast
+      1 certian
+      1 childhood,
+      1 children
+      1 chilling
+      1 choice
+      1 clear
+      1 closet.
+      1 coming
+      1 comment
+      1 comments
+      1 complain
+      1 complaint
+      1 complaints
+      1 complements
+      1 completely
+      1 complex
+      1 comprehends
+      1 concise
+      1 confuses
+      1 confusing
+      1 considered
+      1 consists
+      1 could
+      1 criticized
+      1 cursory
+      1 d'etre
+      1 dad
+      1 dad's
+      1 day.
+      1 days.
+      1 deal
+      1 deals
+      1 deceit
+      1 decided
+      1 deeper
+      1 definitely
+      1 deliver
+      1 describe
+      1 described
+      1 describing
+      1 despair
+      1 detailed.
+      1 detective
+      1 did--not
+      1 disappointed.
+      1 elation
+      1 embroiled
+      1 employed
+      1 employer
+      1 enjoy
+      1 enjoying
+      1 ensemble
+      1 entertaining
+      1 especially
+      1 essentially
+      1 euphoric
+      1 even
+      1 event,
+      1 events
+      1 examination
+      1 examples
+      1 experienced
+      1 experiences
+      1 experiment
+      1 explained.
+      1 fact,
+      1 family
+      1 fans
+      1 father
+      1 feel
+      1 fell
+      1 final
+      1 fine
+      1 first,
+      1 fit
+      1 flashes
+      1 follow
+      1 following
+      1 follows
+      1 four
+      1 fourth
+      1 frequent
+      1 friends
+      1 frills
+      1 from.
+      1 fun
+      1 funny
+      1 get
+      1 goal
+      1 goddamn,
+      1 goes
+      1 got
+      1 growing
+      1 happened
+      1 hardly
+      1 having
+      1 help
+      1 her.
+      1 hire
+      1 history,
+      1 homicide
+      1 honored
+      1 hope
+      1 however
+      1 href=\\"[...]\\">lock
+      1 humor.
+      1 humorous
+      1 husband
+      1 i
+      1 ideas
+      1 idicated
+      1 immediatley
+      1 imponrtance
+      1 imporntantly
+      1 improvement
+      1 indeed,
+      1 information
+      1 informative.
+      1 institution,
+      1 interested.
+      1 interesting.<br
+      1 isn't
+      1 issues
+      1 it,
+      1 it-a
+      1 job
+      1 job,
+      1 jobs
+      1 just
+      1 keys,
+      1 kicked
+      1 kid's
+      1 kids
+      1 killing
+      1 knew
+      1 knowledge.
+      1 lack
+      1 laid
+      1 language
+      1 laugh,
+      1 leading
+      1 least
+      1 leg
+      1 letters
+      1 life.
+      1 life.<br
+      1 light,
+      1 liked
+      1 linking
+      1 list
+      1 little
+      1 lives
+      1 locks
+      1 logic
+      1 long
+      1 lot
+      1 love.
+      1 managed
+      1 many
+      1 marks
+      1 matter
+      1 me,
+      1 meet
+      1 merely
+      1 mid-level
+      1 military
+      1 mind,
+      1 most
+      1 murder
+      1 murdered
+      1 murdered.
+      1 must
+      1 name
+      1 nicely
+      1 nose
+      1 novel,
+      1 obstacles
+      1 obtained
+      1 of.
+      1 offered
+      1 offers
+      1 office,
+      1 open
+      1 opening
+      1 organized,
+      1 other
+      1 out\\"
+      1 overall
+      1 overcome
+      1 padlocks,
+      1 pair
+      1 pants.
+      1 pants.\\"
+      1 partner
+      1 pass
+      1 people
+      1 phony.
+      1 picking
+      1 place
+      1 place.
+      1 places
+      1 plot,
+      1 popped
+      1 pregnant
+      1 presentable
+      1 pretty
+      1 primary
+      1 probably
+      1 process
+      1 promised
+      1 proofs
+      1 purposes
+      1 puts
+      1 quite
+      1 raison
+      1 rape
+      1 rather
+      1 read.
+      1 reading,
+      1 realizing
+      1 reasoning
+      1 reccommend
+      1 recently
+      1 recommend.
+      1 relate
+      1 relative
+      1 repetative,
+      1 resurfaced
+      1 returning
+      1 review_body
+      1 risk
+      1 romance
+      1 rooms
+      1 root
+      1 rules
+      1 said
+      1 salary,
+      1 same
+      1 save
+      1 say
+      1 scary
+      1 school
+      1 seek
+      1 seeking.
+      1 seeming
+      1 seems
+      1 seven
+      1 shapes
+      1 showcases
+      1 shown
+      1 side,
+      1 silly
+      1 since
+      1 sizes
+      1 slihgtest
+      1 snatched
+      1 solid
+      1 son
+      1 sonuvabitch,
+      1 sort
+      1 sound
+      1 special
+      1 special.
+      1 spending
+      1 sprinkled
+      1 stars
+      1 start
+      1 started
+      1 starts
+      1 still
+      1 stimulate
+      1 stopped.
+      1 story\\"
+      1 strategist
+      1 structure
+      1 students
+      1 style,
+      1 subject
+      1 subplots
+      1 summers
+      1 superb
+      1 supported
+      1 surprised
+      1 surreal
+      1 suspects
+      1 suspense
+      1 taken
+      1 taking
+      1 tale
+      1 tales;
+      1 teach
+      1 teaches
+      1 teens
+      1 telling
+      1 tells
+      1 that's
+      1 them,
+      1 there
+      1 there--and
+      1 thing
+      1 think
+      1 this--no
+      1 thought-provoking
+      1 thriller
+      1 through
+      1 through.
+      1 throuh
+      1 time
+      1 time.
+      1 to,
+      1 together
+      1 together,
+      1 town
+      1 traditional
+      1 tragedy,
+      1 tucked
+      1 turn
+      1 turned
+      1 twenty
+      1 twist
+      1 u
+      1 understand
+      1 upon
+      1 use
+      1 values
+      1 veteran
+      1 viewed
+      1 vocabulary
+      1 want
+      1 wanted
+      1 whatsoever
+      1 whole
+      1 with.
+      1 without
+      1 woman's
+      1 wondering
+      1 words:
+      1 worked
+      1 world'
+      1 write
+      1 writing
+      1 written
+      1 years
+      1 you'll
+      1 you're
+      1 young
+      1 yuor
+      1 yuorself.
+      2 />The
+      2 />We
+      2 Agency
+      2 COLBY
+      2 Chicago
+      2 Colby
+      2 Emily
+      2 However,
+      2 In
+      2 It's
+      2 THE
+      2 Tasha
+      2 This
+      2 \\"jobs\\"
+      2 ago
+      2 almost
+      2 also
+      2 away
+      2 back
+      2 being
+      2 best
+      2 book,
+      2 book.
+      2 come
+      2 corporate
+      2 day
+      2 decades
+      2 depressing
+      2 did
+      2 did.
+      2 different
+      2 differnt
+      2 easy
+      2 finds
+      2 found
+      2 give
+      2 going
+      2 good
+      2 great
+      2 had
+      2 has
+      2 here.
+      2 him.
+      2 home
+      2 into
+      2 it's
+      2 life
+      2 like
+      2 lousy
+      2 manner.
+      2 mental
+      2 much
+      2 my
+      2 need
+      2 once
+      2 over
+      2 pick
+      2 placed
+      2 point
+      2 reader
+      2 realize
+      2 right
+      2 sense
+      2 should
+      2 somehow
+      2 strong
+      2 summer
+      2 takes
+      2 than
+      2 though
+      2 try
+      2 two
+      2 wants
+      2 way
+      2 wearing
+      2 when
+      2 whose
+      2 world
+      2 your
+      3 Daniel
+      3 He
+      3 It
+      3 Jim
+      3 Seth
+      3 The
+      3 Victoria
+      3 actually
+      3 bit
+      3 girls
+      3 how
+      3 it.
+      3 learn
+      3 make
+      3 never
+      3 so
+      3 some
+      3 something
+      3 such
+      3 them
+      3 these
+      3 things
+      3 those
+      3 thought
+      3 well
+      3 were
+      3 while
+      4 4
+      4 <br
+      4 at
+      4 been
+      4 from
+      4 his
+      4 if
+      4 looking
+      4 read
+      4 really
+      4 their
+      4 up
+      4 very
+      4 who
+      5 /><br
+      5 all
+      5 are
+      5 by
+      5 can
+      5 first
+      5 have
+      5 not
+      5 only
+      5 out
+      5 pants
+      5 story
+      5 with
+      6 no
+      6 on
+      6 one
+      6 what
+      6 which
+      6 would
+      7 I
+      7 about
+      7 as
+      7 be
+      7 but
+      7 he
+      7 more
+      7 they
+      7 will
+      8 her
+     10 book
+     10 it
+     10 this
+     10 you
+     12 for
+     13 she
+     16 was
+     17 is
+     22 that
+     23 a
+     24 in
+     26 of
+     27 
+     32 to
+     40 and
+     54 the
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ tr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r
+     54 the
+     40 and
+     32 to
+     27 
+     26 of
+     24 in
+     23 a
+     22 that
+     17 is
+     16 was
+     13 she
+     12 for
+     10 you
+     10 this
+     10 it
+     10 book
+      8 her
+      7 will
+      7 they
+      7 more
+      7 he
+      7 but
+      7 be
+      7 as
+      7 about
+      7 I
+      6 would
+      6 which
+      6 what
+      6 one
+      6 on
+      6 no
+      5 with
+      5 story
+      5 pants
+      5 out
+      5 only
+      5 not
+      5 have
+      5 first
+      5 can
+      5 by
+      5 are
+      5 all
+      5 /><br
+      4 who
+      4 very
+      4 up
+      4 their
+      4 really
+      4 read
+      4 looking
+      4 if
+      4 his
+      4 from
+      4 been
+      4 at
+      4 <br
+      4 4
+      3 while
+      3 were
+      3 well
+      3 thought
+      3 those
+      3 things
+      3 these
+      3 them
+      3 such
+      3 something
+      3 some
+      3 so
+      3 never
+      3 make
+      3 learn
+      3 it.
+      3 how
+      3 girls
+      3 bit
+      3 actually
+      3 Victoria
+      3 The
+      3 Seth
+      3 Jim
+      3 It
+      3 He
+      3 Daniel
+      2 your
+      2 world
+      2 whose
+      2 when
+      2 wearing
+      2 way
+      2 wants
+      2 two
+      2 try
+      2 though
+      2 than
+      2 takes
+      2 summer
+      2 strong
+      2 somehow
+      2 should
+      2 sense
+      2 right
+      2 realize
+      2 reader
+      2 point
+      2 placed
+      2 pick
+      2 over
+      2 once
+      2 need
+      2 my
+      2 much
+      2 mental
+      2 manner.
+      2 lousy
+      2 like
+      2 life
+      2 it's
+      2 into
+      2 home
+      2 him.
+      2 here.
+      2 has
+      2 had
+      2 great
+      2 good
+      2 going
+      2 give
+      2 found
+      2 finds
+      2 easy
+      2 differnt
+      2 different
+      2 did.
+      2 did
+      2 depressing
+      2 decades
+      2 day
+      2 corporate
+      2 come
+      2 book.
+      2 book,
+      2 best
+      2 being
+      2 back
+      2 away
+      2 also
+      2 almost
+      2 ago
+      2 \\"jobs\\"
+      2 This
+      2 Tasha
+      2 THE
+      2 It's
+      2 In
+      2 However,
+      2 Emily
+      2 Colby
+      2 Chicago
+      2 COLBY
+      2 Agency
+      2 />We
+      2 />The
+      1 yuorself.
+      1 yuor
+      1 young
+      1 you're
+      1 you'll
+      1 years
+      1 written
+      1 writing
+      1 write
+      1 world'
+      1 worked
+      1 words:
+      1 wondering
+      1 woman's
+      1 without
+      1 with.
+      1 whole
+      1 whatsoever
+      1 wanted
+      1 want
+      1 vocabulary
+      1 viewed
+      1 veteran
+      1 values
+      1 use
+      1 upon
+      1 understand
+      1 u
+      1 twist
+      1 twenty
+      1 turned
+      1 turn
+      1 tucked
+      1 tragedy,
+      1 traditional
+      1 town
+      1 together,
+      1 together
+      1 to,
+      1 time.
+      1 time
+      1 throuh
+      1 through.
+      1 through
+      1 thriller
+      1 thought-provoking
+      1 this--no
+      1 think
+      1 thing
+      1 there--and
+      1 there
+      1 them,
+      1 that's
+      1 tells
+      1 telling
+      1 teens
+      1 teaches
+      1 teach
+      1 tales;
+      1 tale
+      1 taking
+      1 taken
+      1 suspense
+      1 suspects
+      1 surreal
+      1 surprised
+      1 supported
+      1 superb
+      1 summers
+      1 subplots
+      1 subject
+      1 style,
+      1 students
+      1 structure
+      1 strategist
+      1 story\\"
+      1 stopped.
+      1 stimulate
+      1 still
+      1 starts
+      1 started
+      1 start
+      1 stars
+      1 sprinkled
+      1 spending
+      1 special.
+      1 special
+      1 sound
+      1 sort
+      1 sonuvabitch,
+      1 son
+      1 solid
+      1 snatched
+      1 slihgtest
+      1 sizes
+      1 since
+      1 silly
+      1 side,
+      1 shown
+      1 showcases
+      1 shapes
+      1 seven
+      1 seems
+      1 seeming
+      1 seeking.
+      1 seek
+      1 school
+      1 scary
+      1 say
+      1 save
+      1 same
+      1 salary,
+      1 said
+      1 rules
+      1 root
+      1 rooms
+      1 romance
+      1 risk
+      1 review_body
+      1 returning
+      1 resurfaced
+      1 repetative,
+      1 relative
+      1 relate
+      1 recommend.
+      1 recently
+      1 reccommend
+      1 reasoning
+      1 realizing
+      1 reading,
+      1 read.
+      1 rather
+      1 rape
+      1 raison
+      1 quite
+      1 puts
+      1 purposes
+      1 proofs
+      1 promised
+      1 process
+      1 probably
+      1 primary
+      1 pretty
+      1 presentable
+      1 pregnant
+      1 popped
+      1 plot,
+      1 places
+      1 place.
+      1 place
+      1 picking
+      1 phony.
+      1 people
+      1 pass
+      1 partner
+      1 pants.\\"
+      1 pants.
+      1 pair
+      1 padlocks,
+      1 overcome
+      1 overall
+      1 out\\"
+      1 other
+      1 organized,
+      1 opening
+      1 open
+      1 office,
+      1 offers
+      1 offered
+      1 of.
+      1 obtained
+      1 obstacles
+      1 novel,
+      1 nose
+      1 nicely
+      1 name
+      1 must
+      1 murdered.
+      1 murdered
+      1 murder
+      1 most
+      1 mind,
+      1 military
+      1 mid-level
+      1 merely
+      1 meet
+      1 me,
+      1 matter
+      1 marks
+      1 many
+      1 managed
+      1 love.
+      1 lot
+      1 long
+      1 logic
+      1 locks
+      1 lives
+      1 little
+      1 list
+      1 linking
+      1 liked
+      1 light,
+      1 life.<br
+      1 life.
+      1 letters
+      1 leg
+      1 least
+      1 leading
+      1 laugh,
+      1 language
+      1 laid
+      1 lack
+      1 knowledge.
+      1 knew
+      1 killing
+      1 kids
+      1 kid's
+      1 kicked
+      1 keys,
+      1 just
+      1 jobs
+      1 job,
+      1 job
+      1 it-a
+      1 it,
+      1 issues
+      1 isn't
+      1 interesting.<br
+      1 interested.
+      1 institution,
+      1 informative.
+      1 information
+      1 indeed,
+      1 improvement
+      1 imporntantly
+      1 imponrtance
+      1 immediatley
+      1 idicated
+      1 ideas
+      1 i
+      1 husband
+      1 humorous
+      1 humor.
+      1 href=\\"[...]\\">lock
+      1 however
+      1 hope
+      1 honored
+      1 homicide
+      1 history,
+      1 hire
+      1 her.
+      1 help
+      1 having
+      1 hardly
+      1 happened
+      1 growing
+      1 got
+      1 goes
+      1 goddamn,
+      1 goal
+      1 get
+      1 funny
+      1 fun
+      1 from.
+      1 frills
+      1 friends
+      1 frequent
+      1 fourth
+      1 four
+      1 follows
+      1 following
+      1 follow
+      1 flashes
+      1 fit
+      1 first,
+      1 fine
+      1 final
+      1 fell
+      1 feel
+      1 father
+      1 fans
+      1 family
+      1 fact,
+      1 explained.
+      1 experiment
+      1 experiences
+      1 experienced
+      1 examples
+      1 examination
+      1 events
+      1 event,
+      1 even
+      1 euphoric
+      1 essentially
+      1 especially
+      1 entertaining
+      1 ensemble
+      1 enjoying
+      1 enjoy
+      1 employer
+      1 employed
+      1 embroiled
+      1 elation
+      1 disappointed.
+      1 did--not
+      1 detective
+      1 detailed.
+      1 despair
+      1 describing
+      1 described
+      1 describe
+      1 deliver
+      1 definitely
+      1 deeper
+      1 decided
+      1 deceit
+      1 deals
+      1 deal
+      1 days.
+      1 day.
+      1 dad's
+      1 dad
+      1 d'etre
+      1 cursory
+      1 criticized
+      1 could
+      1 consists
+      1 considered
+      1 confusing
+      1 confuses
+      1 concise
+      1 comprehends
+      1 complex
+      1 completely
+      1 complements
+      1 complaints
+      1 complaint
+      1 complain
+      1 comments
+      1 comment
+      1 coming
+      1 closet.
+      1 clear
+      1 choice
+      1 chilling
+      1 children
+      1 childhood,
+      1 certian
+      1 cast
+      1 can't
+      1 buyers
+      1 brevity,
+      1 brain,
+      1 boring
+      1 boook
+      1 books&lt;/a>,
+      1 bizarre.
+      1 bizarre,
+      1 benefits,
+      1 become
+      1 because
+      1 basic,
+      1 basic
+      1 based
+      1 away,
+      1 author
+      1 audience
+      1 arrival
+      1 around
+      1 apart.
+      1 anyone
+      1 any
+      1 annoying
+      1 analyze.\\"
+      1 an
+      1 always
+      1 alot
+      1 agree
+      1 ago.<br
+      1 ago.
+      1 age
+      1 after
+      1 actual
+      1 abut
+      1 abandoning
+      1 \\"promised
+      1 \\"never
+      1 \\"lucky\\"
+      1 \\"lucked
+      1 \\"defeats\\"
+      1 \\"PW
+      1 You
+      1 Year,
+      1 Woman
+      1 When
+      1 Weekly
+      1 Webb
+      1 Victoria,
+      1 University
+      1 To
+      1 Thus,
+      1 Though
+      1 Tasha.<br
+      1 Soon
+      1 Some
+      1 She
+      1 Rutland
+      1 Review
+      1 Publisher's
+      1 Prep
+      1 Phoenix
+      1 Philosophy
+      1 PROTECTIVE
+      1 North
+      1 Never
+      1 My
+      1 Ms.
+      1 Mary
+      1 Marks
+      1 Marelyn
+      1 Klausner
+      1 Kay,
+      1 James,
+      1 If
+      1 Holden's
+      1 Holden
+      1 Hastings
+      1 HAD
+      1 Guide.
+      1 Girl's
+      1 FROM
+      1 FILES
+      1 Ehrenreich's
+      1 Ehrenreich
+      1 ENTER
+      1 Colby-Camp
+      1 Caulfield's
+      1 CUSTODY).
+      1 CONSPIRACY
+      1 But
+      1 Bad
+      1 BODYGUARD'S
+      1 BABY
+      1 As
+      1 Also
+      1 AGENCY:
+      1 AFLAC
+      1 A-game.<br
+      1 A
+      1 3
+      1 251.
+      1 />Though
+      1 />It
+      1 />Harriet
+      1 />Former
+      1 />
+      1 (see
+      1 (presumably)
+      1 'midlevel
+      1 &lt;a
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ tr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pcat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv | sort | uniq -c[K | sort | uniq -c[K
+review_body
+this boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.
+If you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.
+never read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say
+Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape a pregnant Tasha.<br /><br />Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father a veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman's long ago murdered first husband James, and her dad's first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.<br /><br />Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'S BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  A final twist marks a strong Webb of deceit tale that showcases a fine author on her A-game.<br /><br />Harriet Klausner
+Review based on a cursory examination by University of Phoenix students in Philosophy 251.  <br />We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. <br />The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in a clear and concise manner. <br />We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. <br />
+My only complaint is that this book was a bit repetative, and Holden's vocabulary only consists of 4 words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.<br /><br />It was easy to read and to relate to, so you should pick it up if you're looking for a fun read. Some people complain about the lack of a plot, but to understand this book you need to read deeper into it. It's actually a lot more than some annoying kid's list of complaints about life.<br /><br />The story is about Holden Caulfield's coming of age and realizing that growing up is not a process that can be stopped. He had a lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from a mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those 3 days.
+This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  I was sort of surprised however by the comment in Publisher's Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can't deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  I never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, I actually thought that she \\"lucked out\\" in a sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained a job right away, it would have taken away the whole raison d'etre of the book.  It would have been a completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, I think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, I thought those comments were bizarre.  I agree with Ms. Ehrenreich's point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it's really a pretty scary and depressing book, but one which I recommend.
+When looking for &lt;a href=\\"[...]\\">lock picking books&lt;/a>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not a romance novel, it's how to open locks without keys, and that's it. You will learn what you need to here. But you should always seek out more knowledge.
+Never been much for enjoying history, but the style, brevity, and choice of subject matter come together very nicely in this book.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$  sed -i 's/<[a-zA-Z]\+ \/>//g' amazonReview.10lines.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kamazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ cat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Pcat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+review_body
+this boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.
+If you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.
+never read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say
+Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape a pregnant Tasha.Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father a veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman's long ago murdered first husband James, and her dad's first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'S BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  A final twist marks a strong Webb of deceit tale that showcases a fine author on her A-game.Harriet Klausner
+Review based on a cursory examination by University of Phoenix students in Philosophy 251.  We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in a clear and concise manner. We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. 
+My only complaint is that this book was a bit repetative, and Holden's vocabulary only consists of 4 words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.It was easy to read and to relate to, so you should pick it up if you're looking for a fun read. Some people complain about the lack of a plot, but to understand this book you need to read deeper into it. It's actually a lot more than some annoying kid's list of complaints about life.The story is about Holden Caulfield's coming of age and realizing that growing up is not a process that can be stopped. He had a lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from a mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those 3 days.
+This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  I was sort of surprised however by the comment in Publisher's Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can't deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  I never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, I actually thought that she \\"lucked out\\" in a sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained a job right away, it would have taken away the whole raison d'etre of the book.  It would have been a completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, I think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, I thought those comments were bizarre.  I agree with Ms. Ehrenreich's point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it's really a pretty scary and depressing book, but one which I recommend.
+When looking for &lt;a href=\\"[...]\\">lock picking books&lt;/a>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not a romance novel, it's how to open locks without keys, and that's it. You will learn what you need to here. But you should always seek out more knowledge.
+Never been much for enjoying history, but the style, brevity, and choice of subject matter come together very nicely in this book.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ cat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r
+     54 the
+     40 and
+     32 to
+     28 
+     26 of
+     24 in
+     23 a
+     22 that
+     17 is
+     16 was
+     13 she
+     12 for
+     10 you
+     10 this
+     10 it
+     10 book
+      8 her
+      7 will
+      7 they
+      7 more
+      7 he
+      7 but
+      7 be
+      7 as
+      7 about
+      7 I
+      6 would
+      6 which
+      6 what
+      6 one
+      6 on
+      6 no
+      5 with
+      5 story
+      5 pants
+      5 out
+      5 only
+      5 not
+      5 have
+      5 first
+      5 can
+      5 by
+      5 are
+      5 all
+      4 who
+      4 very
+      4 up
+      4 their
+      4 really
+      4 read
+      4 looking
+      4 if
+      4 his
+      4 from
+      4 been
+      4 at
+      4 The
+      4 4
+      3 while
+      3 were
+      3 well
+      3 thought
+      3 those
+      3 things
+      3 these
+      3 them
+      3 such
+      3 something
+      3 some
+      3 so
+      3 never
+      3 make
+      3 learn
+      3 it.
+      3 how
+      3 girls
+      3 bit
+      3 actually
+      3 Victoria
+      3 Seth
+      3 Jim
+      3 It
+      3 He
+      3 Daniel
+      2 your
+      2 world
+      2 whose
+      2 when
+      2 wearing
+      2 way
+      2 wants
+      2 two
+      2 try
+      2 though
+      2 than
+      2 takes
+      2 summer
+      2 strong
+      2 somehow
+      2 should
+      2 sense
+      2 right
+      2 realize
+      2 reader
+      2 point
+      2 placed
+      2 pick
+      2 over
+      2 once
+      2 need
+      2 my
+      2 much
+      2 mental
+      2 manner.
+      2 lousy
+      2 like
+      2 life
+      2 it's
+      2 into
+      2 home
+      2 him.
+      2 here.
+      2 has
+      2 had
+      2 great
+      2 good
+      2 going
+      2 give
+      2 found
+      2 finds
+      2 easy
+      2 differnt
+      2 different
+      2 did.
+      2 did
+      2 depressing
+      2 decades
+      2 day
+      2 corporate
+      2 come
+      2 book.
+      2 book,
+      2 best
+      2 being
+      2 back
+      2 away
+      2 also
+      2 almost
+      2 ago
+      2 \\"jobs\\"
+      2 We
+      2 This
+      2 Tasha
+      2 THE
+      2 It's
+      2 In
+      2 However,
+      2 Emily
+      2 Colby
+      2 Chicago
+      2 COLBY
+      2 Agency
+      1 yuorself.
+      1 yuor
+      1 young
+      1 you're
+      1 you'll
+      1 years
+      1 written
+      1 writing
+      1 write
+      1 world'
+      1 worked
+      1 words:
+      1 wondering
+      1 woman's
+      1 without
+      1 with.
+      1 whole
+      1 whatsoever
+      1 wanted
+      1 want
+      1 vocabulary
+      1 viewed
+      1 veteran
+      1 values
+      1 use
+      1 upon
+      1 understand
+      1 u
+      1 twist
+      1 twenty
+      1 turned
+      1 turn
+      1 tucked
+      1 tragedy,
+      1 traditional
+      1 town
+      1 together,
+      1 together
+      1 to,
+      1 time.
+      1 time
+      1 throuh
+      1 through.
+      1 through
+      1 thriller
+      1 thought-provoking
+      1 this--no
+      1 think
+      1 thing
+      1 there--and
+      1 there
+      1 them,
+      1 that's
+      1 tells
+      1 telling
+      1 teens
+      1 teaches
+      1 teach
+      1 tales;
+      1 tale
+      1 taking
+      1 taken
+      1 suspense
+      1 suspects
+      1 surreal
+      1 surprised
+      1 supported
+      1 superb
+      1 summers
+      1 subplots
+      1 subject
+      1 style,
+      1 students
+      1 structure
+      1 strategist
+      1 story\\"
+      1 stopped.
+      1 stimulate
+      1 still
+      1 starts
+      1 started
+      1 start
+      1 stars
+      1 sprinkled
+      1 spending
+      1 special.
+      1 special
+      1 sound
+      1 sort
+      1 sonuvabitch,
+      1 son
+      1 solid
+      1 snatched
+      1 slihgtest
+      1 sizes
+      1 since
+      1 silly
+      1 side,
+      1 shown
+      1 showcases
+      1 shapes
+      1 seven
+      1 seems
+      1 seeming
+      1 seeking.
+      1 seek
+      1 school
+      1 scary
+      1 say
+      1 save
+      1 same
+      1 salary,
+      1 said
+      1 rules
+      1 root
+      1 rooms
+      1 romance
+      1 risk
+      1 review_body
+      1 returning
+      1 resurfaced
+      1 repetative,
+      1 relative
+      1 relate
+      1 recommend.
+      1 recently
+      1 reccommend
+      1 reasoning
+      1 realizing
+      1 reading,
+      1 read.
+      1 rather
+      1 rape
+      1 raison
+      1 quite
+      1 puts
+      1 purposes
+      1 proofs
+      1 promised
+      1 process
+      1 probably
+      1 primary
+      1 pretty
+      1 presentable
+      1 pregnant
+      1 popped
+      1 plot,
+      1 places
+      1 place.
+      1 place
+      1 picking
+      1 phony.
+      1 people
+      1 pass
+      1 partner
+      1 pants.\\"
+      1 pants.
+      1 pair
+      1 padlocks,
+      1 overcome
+      1 overall
+      1 out\\"
+      1 other
+      1 organized,
+      1 opening
+      1 open
+      1 office,
+      1 offers
+      1 offered
+      1 of.
+      1 obtained
+      1 obstacles
+      1 novel,
+      1 nose
+      1 nicely
+      1 name
+      1 must
+      1 murdered.
+      1 murdered
+      1 murder
+      1 most
+      1 mind,
+      1 military
+      1 mid-level
+      1 merely
+      1 meet
+      1 me,
+      1 matter
+      1 marks
+      1 many
+      1 managed
+      1 love.
+      1 lot
+      1 long
+      1 logic
+      1 locks
+      1 lives
+      1 little
+      1 list
+      1 linking
+      1 liked
+      1 light,
+      1 life.The
+      1 life.
+      1 letters
+      1 leg
+      1 least
+      1 leading
+      1 laugh,
+      1 language
+      1 laid
+      1 lack
+      1 knowledge.
+      1 knew
+      1 killing
+      1 kids
+      1 kid's
+      1 kicked
+      1 keys,
+      1 just
+      1 jobs
+      1 job,
+      1 job
+      1 it-a
+      1 it,
+      1 issues
+      1 isn't
+      1 interesting.It
+      1 interested.
+      1 institution,
+      1 informative.
+      1 information
+      1 indeed,
+      1 improvement
+      1 imporntantly
+      1 imponrtance
+      1 immediatley
+      1 idicated
+      1 ideas
+      1 i
+      1 husband
+      1 humorous
+      1 humor.
+      1 href=\\"[...]\\">lock
+      1 however
+      1 hope
+      1 honored
+      1 homicide
+      1 history,
+      1 hire
+      1 her.
+      1 help
+      1 having
+      1 hardly
+      1 happened
+      1 growing
+      1 got
+      1 goes
+      1 goddamn,
+      1 goal
+      1 get
+      1 funny
+      1 fun
+      1 from.
+      1 frills
+      1 friends
+      1 frequent
+      1 fourth
+      1 four
+      1 follows
+      1 following
+      1 follow
+      1 flashes
+      1 fit
+      1 first,
+      1 fine
+      1 final
+      1 fell
+      1 feel
+      1 father
+      1 fans
+      1 family
+      1 fact,
+      1 explained.
+      1 experiment
+      1 experiences
+      1 experienced
+      1 examples
+      1 examination
+      1 events
+      1 event,
+      1 even
+      1 euphoric
+      1 essentially
+      1 especially
+      1 entertaining
+      1 ensemble
+      1 enjoying
+      1 enjoy
+      1 employer
+      1 employed
+      1 embroiled
+      1 elation
+      1 disappointed.
+      1 did--not
+      1 detective
+      1 detailed.
+      1 despair
+      1 describing
+      1 described
+      1 describe
+      1 deliver
+      1 definitely
+      1 deeper
+      1 decided
+      1 deceit
+      1 deals
+      1 deal
+      1 days.
+      1 day.
+      1 dad's
+      1 dad
+      1 d'etre
+      1 cursory
+      1 criticized
+      1 could
+      1 consists
+      1 considered
+      1 confusing
+      1 confuses
+      1 concise
+      1 comprehends
+      1 complex
+      1 completely
+      1 complements
+      1 complaints
+      1 complaint
+      1 complain
+      1 comments
+      1 comment
+      1 coming
+      1 closet.
+      1 clear
+      1 choice
+      1 chilling
+      1 children
+      1 childhood,
+      1 certian
+      1 cast
+      1 can't
+      1 buyers
+      1 brevity,
+      1 brain,
+      1 boring
+      1 boook
+      1 books&lt;/a>,
+      1 bizarre.
+      1 bizarre,
+      1 benefits,
+      1 become
+      1 because
+      1 basic,
+      1 basic
+      1 based
+      1 away,
+      1 author
+      1 audience
+      1 arrival
+      1 around
+      1 apart.
+      1 anyone
+      1 any
+      1 annoying
+      1 analyze.\\"
+      1 an
+      1 always
+      1 alot
+      1 agree
+      1 ago.Though
+      1 ago.
+      1 age
+      1 after
+      1 actual
+      1 abut
+      1 abandoning
+      1 \\"promised
+      1 \\"never
+      1 \\"lucky\\"
+      1 \\"lucked
+      1 \\"defeats\\"
+      1 \\"PW
+      1 You
+      1 Year,
+      1 Woman
+      1 When
+      1 Weekly
+      1 Webb
+      1 Victoria,
+      1 University
+      1 To
+      1 Thus,
+      1 Though
+      1 Tasha.Former
+      1 Soon
+      1 Some
+      1 She
+      1 Rutland
+      1 Review
+      1 Publisher's
+      1 Prep
+      1 Phoenix
+      1 Philosophy
+      1 PROTECTIVE
+      1 North
+      1 Never
+      1 My
+      1 Ms.
+      1 Mary
+      1 Marks
+      1 Marelyn
+      1 Klausner
+      1 Kay,
+      1 James,
+      1 If
+      1 Holden's
+      1 Holden
+      1 Hastings
+      1 HAD
+      1 Guide.
+      1 Girl's
+      1 FROM
+      1 FILES
+      1 Ehrenreich's
+      1 Ehrenreich
+      1 ENTER
+      1 Colby-Camp
+      1 Caulfield's
+      1 CUSTODY).
+      1 CONSPIRACY
+      1 But
+      1 Bad
+      1 BODYGUARD'S
+      1 BABY
+      1 As
+      1 Also
+      1 AGENCY:
+      1 AFLAC
+      1 A-game.Harriet
+      1 A
+      1 3
+      1 251.
+      1 (see
+      1 (presumably)
+      1 'midlevel
+      1 &lt;a
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ tr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Pcat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pcat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv | sort | uniq -c[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Prm amazon_reviews_us_Books_v1_02.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv | sort | uniq -c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Pcat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ktr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Pcat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Pcat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv | sort | uniq -c[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Prm amazon_reviews_us_Books_v1_02.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd ~/A3awk -F "\t" '{print $14}' amazon_reviews_us_Books_v1_02.tsv | head -n 10 > ~/A3/amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[76Prm  amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K sed -i 's/<[a-zA-Z]\+ \/>//g' amazonReview.10lines.txt[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1@?[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+sed: -e expression #1, char 8: unknown option to `s'
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ tr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksed -i 's/\?/>//g' amazonReview.10lines.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+sed: -e expression #1, char 8: unknown option to `s'
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ sed -i 's/\?/>//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[1P[1@e
+sed: -e expression #1, char 8: unknown option to `s'
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ sed -e 's/\<[a-zA-Z0-9]*[g|G]\>//g' input
+sed: can't read input: No such file or directory
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ sed -e 's/\<[a-zA-Z0-9]*[g|G]\>//g' input[K[K[K[K[K[1P[1P[1P[1@?[C[1P[1P[1P[1P[C[1@[[1@?[1@][1@*[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[Camazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+review_body
+this boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.
+If you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.
+never read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say
+Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape a pregnant Tasha.Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father a veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman's long ago murdered first husband James, and her dad's first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'S BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  A final twist marks a strong Webb of deceit tale that showcases a fine author on her A-game.Harriet Klausner
+Review based on a cursory examination by University of Phoenix students in Philosophy 251.  We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in a clear and concise manner. We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. 
+My only complaint is that this book was a bit repetative, and Holden's vocabulary only consists of 4 words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.It was easy to read and to relate to, so you should pick it up if you're looking for a fun read. Some people complain about the lack of a plot, but to understand this book you need to read deeper into it. It's actually a lot more than some annoying kid's list of complaints about life.The story is about Holden Caulfield's coming of age and realizing that growing up is not a process that can be stopped. He had a lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from a mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those 3 days.
+This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  I was sort of surprised however by the comment in Publisher's Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can't deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  I never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, I actually thought that she \\"lucked out\\" in a sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained a job right away, it would have taken away the whole raison d'etre of the book.  It would have been a completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, I think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, I thought those comments were bizarre.  I agree with Ms. Ehrenreich's point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it's really a pretty scary and depressing book, but one which I recommend.
+When looking for &lt;a href=\\"[...]\\">lock picking books&lt;/a>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not a romance novel, it's how to open locks without keys, and that's it. You will learn what you need to here. But you should always seek out more knowledge.
+Never been much for enjoying history, but the style, brevity, and choice of subject matter come together very nicely in this book.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ sed -e 's/\<[?]\>//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pa-zA-Z0-9]*[g|G]\>//g' input?/>//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Pcat amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r
+     54 the
+     40 and
+     32 to
+     28 
+     26 of
+     24 in
+     23 a
+     22 that
+     17 is
+     16 was
+     13 she
+     12 for
+     10 you
+     10 this
+     10 it
+     10 book
+      8 her
+      7 will
+      7 they
+      7 more
+      7 he
+      7 but
+      7 be
+      7 as
+      7 about
+      7 I
+      6 would
+      6 which
+      6 what
+      6 one
+      6 on
+      6 no
+      5 with
+      5 story
+      5 pants
+      5 out
+      5 only
+      5 not
+      5 have
+      5 first
+      5 can
+      5 by
+      5 are
+      5 all
+      4 who
+      4 very
+      4 up
+      4 their
+      4 really
+      4 read
+      4 looking
+      4 if
+      4 his
+      4 from
+      4 been
+      4 at
+      4 The
+      4 4
+      3 while
+      3 were
+      3 well
+      3 thought
+      3 those
+      3 things
+      3 these
+      3 them
+      3 such
+      3 something
+      3 some
+      3 so
+      3 never
+      3 make
+      3 learn
+      3 it.
+      3 how
+      3 girls
+      3 bit
+      3 actually
+      3 Victoria
+      3 Seth
+      3 Jim
+      3 It
+      3 He
+      3 Daniel
+      2 your
+      2 world
+      2 whose
+      2 when
+      2 wearing
+      2 way
+      2 wants
+      2 two
+      2 try
+      2 though
+      2 than
+      2 takes
+      2 summer
+      2 strong
+      2 somehow
+      2 should
+      2 sense
+      2 right
+      2 realize
+      2 reader
+      2 point
+      2 placed
+      2 pick
+      2 over
+      2 once
+      2 need
+      2 my
+      2 much
+      2 mental
+      2 manner.
+      2 lousy
+      2 like
+      2 life
+      2 it's
+      2 into
+      2 home
+      2 him.
+      2 here.
+      2 has
+      2 had
+      2 great
+      2 good
+      2 going
+      2 give
+      2 found
+      2 finds
+      2 easy
+      2 differnt
+      2 different
+      2 did.
+      2 did
+      2 depressing
+      2 decades
+      2 day
+      2 corporate
+      2 come
+      2 book.
+      2 book,
+      2 best
+      2 being
+      2 back
+      2 away
+      2 also
+      2 almost
+      2 ago
+      2 \\"jobs\\"
+      2 We
+      2 This
+      2 Tasha
+      2 THE
+      2 It's
+      2 In
+      2 However,
+      2 Emily
+      2 Colby
+      2 Chicago
+      2 COLBY
+      2 Agency
+      1 yuorself.
+      1 yuor
+      1 young
+      1 you're
+      1 you'll
+      1 years
+      1 written
+      1 writing
+      1 write
+      1 world'
+      1 worked
+      1 words:
+      1 wondering
+      1 woman's
+      1 without
+      1 with.
+      1 whole
+      1 whatsoever
+      1 wanted
+      1 want
+      1 vocabulary
+      1 viewed
+      1 veteran
+      1 values
+      1 use
+      1 upon
+      1 understand
+      1 u
+      1 twist
+      1 twenty
+      1 turned
+      1 turn
+      1 tucked
+      1 tragedy,
+      1 traditional
+      1 town
+      1 together,
+      1 together
+      1 to,
+      1 time.
+      1 time
+      1 throuh
+      1 through.
+      1 through
+      1 thriller
+      1 thought-provoking
+      1 this--no
+      1 think
+      1 thing
+      1 there--and
+      1 there
+      1 them,
+      1 that's
+      1 tells
+      1 telling
+      1 teens
+      1 teaches
+      1 teach
+      1 tales;
+      1 tale
+      1 taking
+      1 taken
+      1 suspense
+      1 suspects
+      1 surreal
+      1 surprised
+      1 supported
+      1 superb
+      1 summers
+      1 subplots
+      1 subject
+      1 style,
+      1 students
+      1 structure
+      1 strategist
+      1 story\\"
+      1 stopped.
+      1 stimulate
+      1 still
+      1 starts
+      1 started
+      1 start
+      1 stars
+      1 sprinkled
+      1 spending
+      1 special.
+      1 special
+      1 sound
+      1 sort
+      1 sonuvabitch,
+      1 son
+      1 solid
+      1 snatched
+      1 slihgtest
+      1 sizes
+      1 since
+      1 silly
+      1 side,
+      1 shown
+      1 showcases
+      1 shapes
+      1 seven
+      1 seems
+      1 seeming
+      1 seeking.
+      1 seek
+      1 school
+      1 scary
+      1 say
+      1 save
+      1 same
+      1 salary,
+      1 said
+      1 rules
+      1 root
+      1 rooms
+      1 romance
+      1 risk
+      1 review_body
+      1 returning
+      1 resurfaced
+      1 repetative,
+      1 relative
+      1 relate
+      1 recommend.
+      1 recently
+      1 reccommend
+      1 reasoning
+      1 realizing
+      1 reading,
+      1 read.
+      1 rather
+      1 rape
+      1 raison
+      1 quite
+      1 puts
+      1 purposes
+      1 proofs
+      1 promised
+      1 process
+      1 probably
+      1 primary
+      1 pretty
+      1 presentable
+      1 pregnant
+      1 popped
+      1 plot,
+      1 places
+      1 place.
+      1 place
+      1 picking
+      1 phony.
+      1 people
+      1 pass
+      1 partner
+      1 pants.\\"
+      1 pants.
+      1 pair
+      1 padlocks,
+      1 overcome
+      1 overall
+      1 out\\"
+      1 other
+      1 organized,
+      1 opening
+      1 open
+      1 office,
+      1 offers
+      1 offered
+      1 of.
+      1 obtained
+      1 obstacles
+      1 novel,
+      1 nose
+      1 nicely
+      1 name
+      1 must
+      1 murdered.
+      1 murdered
+      1 murder
+      1 most
+      1 mind,
+      1 military
+      1 mid-level
+      1 merely
+      1 meet
+      1 me,
+      1 matter
+      1 marks
+      1 many
+      1 managed
+      1 love.
+      1 lot
+      1 long
+      1 logic
+      1 locks
+      1 lives
+      1 little
+      1 list
+      1 linking
+      1 liked
+      1 light,
+      1 life.The
+      1 life.
+      1 letters
+      1 leg
+      1 least
+      1 leading
+      1 laugh,
+      1 language
+      1 laid
+      1 lack
+      1 knowledge.
+      1 knew
+      1 killing
+      1 kids
+      1 kid's
+      1 kicked
+      1 keys,
+      1 just
+      1 jobs
+      1 job,
+      1 job
+      1 it-a
+      1 it,
+      1 issues
+      1 isn't
+      1 interesting.It
+      1 interested.
+      1 institution,
+      1 informative.
+      1 information
+      1 indeed,
+      1 improvement
+      1 imporntantly
+      1 imponrtance
+      1 immediatley
+      1 idicated
+      1 ideas
+      1 i
+      1 husband
+      1 humorous
+      1 humor.
+      1 href=\\"[...]\\">lock
+      1 however
+      1 hope
+      1 honored
+      1 homicide
+      1 history,
+      1 hire
+      1 her.
+      1 help
+      1 having
+      1 hardly
+      1 happened
+      1 growing
+      1 got
+      1 goes
+      1 goddamn,
+      1 goal
+      1 get
+      1 funny
+      1 fun
+      1 from.
+      1 frills
+      1 friends
+      1 frequent
+      1 fourth
+      1 four
+      1 follows
+      1 following
+      1 follow
+      1 flashes
+      1 fit
+      1 first,
+      1 fine
+      1 final
+      1 fell
+      1 feel
+      1 father
+      1 fans
+      1 family
+      1 fact,
+      1 explained.
+      1 experiment
+      1 experiences
+      1 experienced
+      1 examples
+      1 examination
+      1 events
+      1 event,
+      1 even
+      1 euphoric
+      1 essentially
+      1 especially
+      1 entertaining
+      1 ensemble
+      1 enjoying
+      1 enjoy
+      1 employer
+      1 employed
+      1 embroiled
+      1 elation
+      1 disappointed.
+      1 did--not
+      1 detective
+      1 detailed.
+      1 despair
+      1 describing
+      1 described
+      1 describe
+      1 deliver
+      1 definitely
+      1 deeper
+      1 decided
+      1 deceit
+      1 deals
+      1 deal
+      1 days.
+      1 day.
+      1 dad's
+      1 dad
+      1 d'etre
+      1 cursory
+      1 criticized
+      1 could
+      1 consists
+      1 considered
+      1 confusing
+      1 confuses
+      1 concise
+      1 comprehends
+      1 complex
+      1 completely
+      1 complements
+      1 complaints
+      1 complaint
+      1 complain
+      1 comments
+      1 comment
+      1 coming
+      1 closet.
+      1 clear
+      1 choice
+      1 chilling
+      1 children
+      1 childhood,
+      1 certian
+      1 cast
+      1 can't
+      1 buyers
+      1 brevity,
+      1 brain,
+      1 boring
+      1 boook
+      1 books&lt;/a>,
+      1 bizarre.
+      1 bizarre,
+      1 benefits,
+      1 become
+      1 because
+      1 basic,
+      1 basic
+      1 based
+      1 away,
+      1 author
+      1 audience
+      1 arrival
+      1 around
+      1 apart.
+      1 anyone
+      1 any
+      1 annoying
+      1 analyze.\\"
+      1 an
+      1 always
+      1 alot
+      1 agree
+      1 ago.Though
+      1 ago.
+      1 age
+      1 after
+      1 actual
+      1 abut
+      1 abandoning
+      1 \\"promised
+      1 \\"never
+      1 \\"lucky\\"
+      1 \\"lucked
+      1 \\"defeats\\"
+      1 \\"PW
+      1 You
+      1 Year,
+      1 Woman
+      1 When
+      1 Weekly
+      1 Webb
+      1 Victoria,
+      1 University
+      1 To
+      1 Thus,
+      1 Though
+      1 Tasha.Former
+      1 Soon
+      1 Some
+      1 She
+      1 Rutland
+      1 Review
+      1 Publisher's
+      1 Prep
+      1 Phoenix
+      1 Philosophy
+      1 PROTECTIVE
+      1 North
+      1 Never
+      1 My
+      1 Ms.
+      1 Mary
+      1 Marks
+      1 Marelyn
+      1 Klausner
+      1 Kay,
+      1 James,
+      1 If
+      1 Holden's
+      1 Holden
+      1 Hastings
+      1 HAD
+      1 Guide.
+      1 Girl's
+      1 FROM
+      1 FILES
+      1 Ehrenreich's
+      1 Ehrenreich
+      1 ENTER
+      1 Colby-Camp
+      1 Caulfield's
+      1 CUSTODY).
+      1 CONSPIRACY
+      1 But
+      1 Bad
+      1 BODYGUARD'S
+      1 BABY
+      1 As
+      1 Also
+      1 AGENCY:
+      1 AFLAC
+      1 A-game.Harriet
+      1 A
+      1 3
+      1 251.
+      1 (see
+      1 (presumably)
+      1 'midlevel
+      1 &lt;a
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ tr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Psed -e 's/\<[?]\>//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[1P[1P[1P[C[1P[1@i[C[C[C[C[C[C[C[C[1P[1P[1P[1P[C[1P[1@ [1@/[C[1@?[C[1P
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ sed -i 's/?//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r
+     54 the
+     40 and
+     32 to
+     28 
+     26 of
+     24 in
+     23 a
+     22 that
+     17 is
+     16 was
+     13 she
+     12 for
+     10 you
+     10 this
+     10 it
+     10 book
+      8 her
+      7 will
+      7 they
+      7 more
+      7 he
+      7 but
+      7 be
+      7 as
+      7 about
+      7 I
+      6 would
+      6 which
+      6 what
+      6 one
+      6 on
+      6 no
+      5 with
+      5 story
+      5 pants
+      5 out
+      5 only
+      5 not
+      5 have
+      5 first
+      5 can
+      5 by
+      5 are
+      5 all
+      4 who
+      4 very
+      4 up
+      4 their
+      4 really
+      4 read
+      4 looking
+      4 if
+      4 his
+      4 from
+      4 been
+      4 at
+      4 The
+      4 4
+      3 while
+      3 were
+      3 well
+      3 thought
+      3 those
+      3 things
+      3 these
+      3 them
+      3 such
+      3 something
+      3 some
+      3 so
+      3 never
+      3 make
+      3 learn
+      3 it.
+      3 how
+      3 girls
+      3 bit
+      3 actually
+      3 Victoria
+      3 Seth
+      3 Jim
+      3 It
+      3 He
+      3 Daniel
+      2 your
+      2 world
+      2 whose
+      2 when
+      2 wearing
+      2 way
+      2 wants
+      2 two
+      2 try
+      2 though
+      2 than
+      2 takes
+      2 summer
+      2 strong
+      2 somehow
+      2 should
+      2 sense
+      2 right
+      2 realize
+      2 reader
+      2 point
+      2 placed
+      2 pick
+      2 over
+      2 once
+      2 need
+      2 my
+      2 much
+      2 mental
+      2 manner.
+      2 lousy
+      2 like
+      2 life
+      2 it's
+      2 into
+      2 home
+      2 him.
+      2 here.
+      2 has
+      2 had
+      2 great
+      2 good
+      2 going
+      2 give
+      2 found
+      2 finds
+      2 easy
+      2 differnt
+      2 different
+      2 did.
+      2 did
+      2 depressing
+      2 decades
+      2 day
+      2 corporate
+      2 come
+      2 book.
+      2 book,
+      2 best
+      2 being
+      2 back
+      2 away
+      2 also
+      2 almost
+      2 ago
+      2 \\"jobs\\"
+      2 We
+      2 This
+      2 Tasha
+      2 THE
+      2 It's
+      2 In
+      2 However,
+      2 Emily
+      2 Colby
+      2 Chicago
+      2 COLBY
+      2 Agency
+      1 yuorself.
+      1 yuor
+      1 young
+      1 you're
+      1 you'll
+      1 years
+      1 written
+      1 writing
+      1 write
+      1 world'
+      1 worked
+      1 words:
+      1 wondering
+      1 woman's
+      1 without
+      1 with.
+      1 whole
+      1 whatsoever
+      1 wanted
+      1 want
+      1 vocabulary
+      1 viewed
+      1 veteran
+      1 values
+      1 use
+      1 upon
+      1 understand
+      1 u
+      1 twist
+      1 twenty
+      1 turned
+      1 turn
+      1 tucked
+      1 tragedy,
+      1 traditional
+      1 town
+      1 together,
+      1 together
+      1 to,
+      1 time.
+      1 time
+      1 throuh
+      1 through.
+      1 through
+      1 thriller
+      1 thought-provoking
+      1 this--no
+      1 think
+      1 thing
+      1 there--and
+      1 there
+      1 them,
+      1 that's
+      1 tells
+      1 telling
+      1 teens
+      1 teaches
+      1 teach
+      1 tales;
+      1 tale
+      1 taking
+      1 taken
+      1 suspense
+      1 suspects
+      1 surreal
+      1 surprised
+      1 supported
+      1 superb
+      1 summers
+      1 subplots
+      1 subject
+      1 style,
+      1 students
+      1 structure
+      1 strategist
+      1 story\\"
+      1 stopped.
+      1 stimulate
+      1 still
+      1 starts
+      1 started
+      1 start
+      1 stars
+      1 sprinkled
+      1 spending
+      1 special.
+      1 special
+      1 sound
+      1 sort
+      1 sonuvabitch,
+      1 son
+      1 solid
+      1 snatched
+      1 slihgtest
+      1 sizes
+      1 since
+      1 silly
+      1 side,
+      1 shown
+      1 showcases
+      1 shapes
+      1 seven
+      1 seems
+      1 seeming
+      1 seeking.
+      1 seek
+      1 school
+      1 scary
+      1 say
+      1 save
+      1 same
+      1 salary,
+      1 said
+      1 rules
+      1 root
+      1 rooms
+      1 romance
+      1 risk
+      1 review_body
+      1 returning
+      1 resurfaced
+      1 repetative,
+      1 relative
+      1 relate
+      1 recommend.
+      1 recently
+      1 reccommend
+      1 reasoning
+      1 realizing
+      1 reading,
+      1 read.
+      1 rather
+      1 rape
+      1 raison
+      1 quite
+      1 puts
+      1 purposes
+      1 proofs
+      1 promised
+      1 process
+      1 probably
+      1 primary
+      1 pretty
+      1 presentable
+      1 pregnant
+      1 popped
+      1 plot,
+      1 places
+      1 place.
+      1 place
+      1 picking
+      1 phony.
+      1 people
+      1 pass
+      1 partner
+      1 pants.\\"
+      1 pants.
+      1 pair
+      1 padlocks,
+      1 overcome
+      1 overall
+      1 out\\"
+      1 other
+      1 organized,
+      1 opening
+      1 open
+      1 office,
+      1 offers
+      1 offered
+      1 of.
+      1 obtained
+      1 obstacles
+      1 novel,
+      1 nose
+      1 nicely
+      1 name
+      1 must
+      1 murdered.
+      1 murdered
+      1 murder
+      1 most
+      1 mind,
+      1 military
+      1 mid-level
+      1 merely
+      1 meet
+      1 me,
+      1 matter
+      1 marks
+      1 many
+      1 managed
+      1 love.
+      1 lot
+      1 long
+      1 logic
+      1 locks
+      1 lives
+      1 little
+      1 list
+      1 linking
+      1 liked
+      1 light,
+      1 life.The
+      1 life.
+      1 letters
+      1 leg
+      1 least
+      1 leading
+      1 laugh,
+      1 language
+      1 laid
+      1 lack
+      1 knowledge.
+      1 knew
+      1 killing
+      1 kids
+      1 kid's
+      1 kicked
+      1 keys,
+      1 just
+      1 jobs
+      1 job,
+      1 job
+      1 it-a
+      1 it,
+      1 issues
+      1 isn't
+      1 interesting.It
+      1 interested.
+      1 institution,
+      1 informative.
+      1 information
+      1 indeed,
+      1 improvement
+      1 imporntantly
+      1 imponrtance
+      1 immediatley
+      1 idicated
+      1 ideas
+      1 i
+      1 husband
+      1 humorous
+      1 humor.
+      1 href=\\"[...]\\">lock
+      1 however
+      1 hope
+      1 honored
+      1 homicide
+      1 history,
+      1 hire
+      1 her.
+      1 help
+      1 having
+      1 hardly
+      1 happened
+      1 growing
+      1 got
+      1 goes
+      1 goddamn,
+      1 goal
+      1 get
+      1 funny
+      1 fun
+      1 from.
+      1 frills
+      1 friends
+      1 frequent
+      1 fourth
+      1 four
+      1 follows
+      1 following
+      1 follow
+      1 flashes
+      1 fit
+      1 first,
+      1 fine
+      1 final
+      1 fell
+      1 feel
+      1 father
+      1 fans
+      1 family
+      1 fact,
+      1 explained.
+      1 experiment
+      1 experiences
+      1 experienced
+      1 examples
+      1 examination
+      1 events
+      1 event,
+      1 even
+      1 euphoric
+      1 essentially
+      1 especially
+      1 entertaining
+      1 ensemble
+      1 enjoying
+      1 enjoy
+      1 employer
+      1 employed
+      1 embroiled
+      1 elation
+      1 disappointed.
+      1 did--not
+      1 detective
+      1 detailed.
+      1 despair
+      1 describing
+      1 described
+      1 describe
+      1 deliver
+      1 definitely
+      1 deeper
+      1 decided
+      1 deceit
+      1 deals
+      1 deal
+      1 days.
+      1 day.
+      1 dad's
+      1 dad
+      1 d'etre
+      1 cursory
+      1 criticized
+      1 could
+      1 consists
+      1 considered
+      1 confusing
+      1 confuses
+      1 concise
+      1 comprehends
+      1 complex
+      1 completely
+      1 complements
+      1 complaints
+      1 complaint
+      1 complain
+      1 comments
+      1 comment
+      1 coming
+      1 closet.
+      1 clear
+      1 choice
+      1 chilling
+      1 children
+      1 childhood,
+      1 certian
+      1 cast
+      1 can't
+      1 buyers
+      1 brevity,
+      1 brain,
+      1 boring
+      1 boook
+      1 books&lt;/a>,
+      1 bizarre.
+      1 bizarre,
+      1 benefits,
+      1 become
+      1 because
+      1 basic,
+      1 basic
+      1 based
+      1 away,
+      1 author
+      1 audience
+      1 arrival
+      1 around
+      1 apart.
+      1 anyone
+      1 any
+      1 annoying
+      1 analyze.\\"
+      1 an
+      1 always
+      1 alot
+      1 agree
+      1 ago.Though
+      1 ago.
+      1 age
+      1 after
+      1 actual
+      1 abut
+      1 abandoning
+      1 \\"promised
+      1 \\"never
+      1 \\"lucky\\"
+      1 \\"lucked
+      1 \\"defeats\\"
+      1 \\"PW
+      1 You
+      1 Year,
+      1 Woman
+      1 When
+      1 Weekly
+      1 Webb
+      1 Victoria,
+      1 University
+      1 To
+      1 Thus,
+      1 Though
+      1 Tasha.Former
+      1 Soon
+      1 Some
+      1 She
+      1 Rutland
+      1 Review
+      1 Publisher's
+      1 Prep
+      1 Phoenix
+      1 Philosophy
+      1 PROTECTIVE
+      1 North
+      1 Never
+      1 My
+      1 Ms.
+      1 Mary
+      1 Marks
+      1 Marelyn
+      1 Klausner
+      1 Kay,
+      1 James,
+      1 If
+      1 Holden's
+      1 Holden
+      1 Hastings
+      1 HAD
+      1 Guide.
+      1 Girl's
+      1 FROM
+      1 FILES
+      1 Ehrenreich's
+      1 Ehrenreich
+      1 ENTER
+      1 Colby-Camp
+      1 Caulfield's
+      1 CUSTODY).
+      1 CONSPIRACY
+      1 But
+      1 Bad
+      1 BODYGUARD'S
+      1 BABY
+      1 As
+      1 Also
+      1 AGENCY:
+      1 AFLAC
+      1 A-game.Harriet
+      1 A
+      1 3
+      1 251.
+      1 (see
+      1 (presumably)
+      1 'midlevel
+      1 &lt;a
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ sed 's/\<.\> \?//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsvamazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kv
+review_body
+this boook was great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  would give this book stars and would reccommend it to anyone who seems the slihgtest bit interested.
+If you are looking for something to stimulate your brain, this isn'it.  However, if you are just looking for good laugh, you'll enjoy The Bad Girl'Guide.  It'funny and light, and definitely good way to pass little bit of time.
+never read it-young relative idicated he liked it and somehow my name popped upon this--no more to say
+Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape pregnant Tasha.Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman'long ago murdered first husband James, and her dad'first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  final twist marks strong Webb of deceit tale that showcases fine author on her -game.Harriet Klausner
+Review based on cursory examination by University of Phoenix students in Philosophy 251.  We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in clear and concise manner. We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. 
+My only complaint is that this book was bit repetative, and Holden'vocabulary only consists of words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.It was easy to read and to relate to, so you should pick it up if you're looking for fun read. Some people complain about the lack of plot, but to understand this book you need to read deeper into it. It'actually lot more than some annoying kid'list of complaints about life.The story is about Holden Caulfield'coming of age and realizing that growing up is not process that can be stopped. He had lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those days.
+This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  was sort of surprised however by the comment in Publisher'Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can'deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, actually thought that she \\"lucked out\\" in sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained job right away, it would have taken away the whole raison 'etre of the book.  It would have been completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, thought those comments were bizarre.  agree with Ms. Ehrenreich'point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it'really pretty scary and depressing book, but one which recommend.
+When looking for &lt;href=\\"[...]\\">lock picking books&lt;/>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not romance novel, it'how to open locks without keys, and that'it. You will learn what you need to here. But you should always seek out more knowledge.
+Never been much for enjoying history, but the style, brevity, and choice of subject matter come together very nicely in this book.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ sed 's/\<.\> \?//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Psed -i 's/?//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Psed -i 's/?//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r
+     54 the
+     40 and
+     32 to
+     28 
+     26 of
+     24 in
+     23 a
+     22 that
+     17 is
+     16 was
+     13 she
+     12 for
+     10 you
+     10 this
+     10 it
+     10 book
+      8 her
+      7 will
+      7 they
+      7 more
+      7 he
+      7 but
+      7 be
+      7 as
+      7 about
+      7 I
+      6 would
+      6 which
+      6 what
+      6 one
+      6 on
+      6 no
+      5 with
+      5 story
+      5 pants
+      5 out
+      5 only
+      5 not
+      5 have
+      5 first
+      5 can
+      5 by
+      5 are
+      5 all
+      4 who
+      4 very
+      4 up
+      4 their
+      4 really
+      4 read
+      4 looking
+      4 if
+      4 his
+      4 from
+      4 been
+      4 at
+      4 The
+      4 4
+      3 while
+      3 were
+      3 well
+      3 thought
+      3 those
+      3 things
+      3 these
+      3 them
+      3 such
+      3 something
+      3 some
+      3 so
+      3 never
+      3 make
+      3 learn
+      3 it.
+      3 how
+      3 girls
+      3 bit
+      3 actually
+      3 Victoria
+      3 Seth
+      3 Jim
+      3 It
+      3 He
+      3 Daniel
+      2 your
+      2 world
+      2 whose
+      2 when
+      2 wearing
+      2 way
+      2 wants
+      2 two
+      2 try
+      2 though
+      2 than
+      2 takes
+      2 summer
+      2 strong
+      2 somehow
+      2 should
+      2 sense
+      2 right
+      2 realize
+      2 reader
+      2 point
+      2 placed
+      2 pick
+      2 over
+      2 once
+      2 need
+      2 my
+      2 much
+      2 mental
+      2 manner.
+      2 lousy
+      2 like
+      2 life
+      2 it's
+      2 into
+      2 home
+      2 him.
+      2 here.
+      2 has
+      2 had
+      2 great
+      2 good
+      2 going
+      2 give
+      2 found
+      2 finds
+      2 easy
+      2 differnt
+      2 different
+      2 did.
+      2 did
+      2 depressing
+      2 decades
+      2 day
+      2 corporate
+      2 come
+      2 book.
+      2 book,
+      2 best
+      2 being
+      2 back
+      2 away
+      2 also
+      2 almost
+      2 ago
+      2 \\"jobs\\"
+      2 We
+      2 This
+      2 Tasha
+      2 THE
+      2 It's
+      2 In
+      2 However,
+      2 Emily
+      2 Colby
+      2 Chicago
+      2 COLBY
+      2 Agency
+      1 yuorself.
+      1 yuor
+      1 young
+      1 you're
+      1 you'll
+      1 years
+      1 written
+      1 writing
+      1 write
+      1 world'
+      1 worked
+      1 words:
+      1 wondering
+      1 woman's
+      1 without
+      1 with.
+      1 whole
+      1 whatsoever
+      1 wanted
+      1 want
+      1 vocabulary
+      1 viewed
+      1 veteran
+      1 values
+      1 use
+      1 upon
+      1 understand
+      1 u
+      1 twist
+      1 twenty
+      1 turned
+      1 turn
+      1 tucked
+      1 tragedy,
+      1 traditional
+      1 town
+      1 together,
+      1 together
+      1 to,
+      1 time.
+      1 time
+      1 throuh
+      1 through.
+      1 through
+      1 thriller
+      1 thought-provoking
+      1 this--no
+      1 think
+      1 thing
+      1 there--and
+      1 there
+      1 them,
+      1 that's
+      1 tells
+      1 telling
+      1 teens
+      1 teaches
+      1 teach
+      1 tales;
+      1 tale
+      1 taking
+      1 taken
+      1 suspense
+      1 suspects
+      1 surreal
+      1 surprised
+      1 supported
+      1 superb
+      1 summers
+      1 subplots
+      1 subject
+      1 style,
+      1 students
+      1 structure
+      1 strategist
+      1 story\\"
+      1 stopped.
+      1 stimulate
+      1 still
+      1 starts
+      1 started
+      1 start
+      1 stars
+      1 sprinkled
+      1 spending
+      1 special.
+      1 special
+      1 sound
+      1 sort
+      1 sonuvabitch,
+      1 son
+      1 solid
+      1 snatched
+      1 slihgtest
+      1 sizes
+      1 since
+      1 silly
+      1 side,
+      1 shown
+      1 showcases
+      1 shapes
+      1 seven
+      1 seems
+      1 seeming
+      1 seeking.
+      1 seek
+      1 school
+      1 scary
+      1 say
+      1 save
+      1 same
+      1 salary,
+      1 said
+      1 rules
+      1 root
+      1 rooms
+      1 romance
+      1 risk
+      1 review_body
+      1 returning
+      1 resurfaced
+      1 repetative,
+      1 relative
+      1 relate
+      1 recommend.
+      1 recently
+      1 reccommend
+      1 reasoning
+      1 realizing
+      1 reading,
+      1 read.
+      1 rather
+      1 rape
+      1 raison
+      1 quite
+      1 puts
+      1 purposes
+      1 proofs
+      1 promised
+      1 process
+      1 probably
+      1 primary
+      1 pretty
+      1 presentable
+      1 pregnant
+      1 popped
+      1 plot,
+      1 places
+      1 place.
+      1 place
+      1 picking
+      1 phony.
+      1 people
+      1 pass
+      1 partner
+      1 pants.\\"
+      1 pants.
+      1 pair
+      1 padlocks,
+      1 overcome
+      1 overall
+      1 out\\"
+      1 other
+      1 organized,
+      1 opening
+      1 open
+      1 office,
+      1 offers
+      1 offered
+      1 of.
+      1 obtained
+      1 obstacles
+      1 novel,
+      1 nose
+      1 nicely
+      1 name
+      1 must
+      1 murdered.
+      1 murdered
+      1 murder
+      1 most
+      1 mind,
+      1 military
+      1 mid-level
+      1 merely
+      1 meet
+      1 me,
+      1 matter
+      1 marks
+      1 many
+      1 managed
+      1 love.
+      1 lot
+      1 long
+      1 logic
+      1 locks
+      1 lives
+      1 little
+      1 list
+      1 linking
+      1 liked
+      1 light,
+      1 life.The
+      1 life.
+      1 letters
+      1 leg
+      1 least
+      1 leading
+      1 laugh,
+      1 language
+      1 laid
+      1 lack
+      1 knowledge.
+      1 knew
+      1 killing
+      1 kids
+      1 kid's
+      1 kicked
+      1 keys,
+      1 just
+      1 jobs
+      1 job,
+      1 job
+      1 it-a
+      1 it,
+      1 issues
+      1 isn't
+      1 interesting.It
+      1 interested.
+      1 institution,
+      1 informative.
+      1 information
+      1 indeed,
+      1 improvement
+      1 imporntantly
+      1 imponrtance
+      1 immediatley
+      1 idicated
+      1 ideas
+      1 i
+      1 husband
+      1 humorous
+      1 humor.
+      1 href=\\"[...]\\">lock
+      1 however
+      1 hope
+      1 honored
+      1 homicide
+      1 history,
+      1 hire
+      1 her.
+      1 help
+      1 having
+      1 hardly
+      1 happened
+      1 growing
+      1 got
+      1 goes
+      1 goddamn,
+      1 goal
+      1 get
+      1 funny
+      1 fun
+      1 from.
+      1 frills
+      1 friends
+      1 frequent
+      1 fourth
+      1 four
+      1 follows
+      1 following
+      1 follow
+      1 flashes
+      1 fit
+      1 first,
+      1 fine
+      1 final
+      1 fell
+      1 feel
+      1 father
+      1 fans
+      1 family
+      1 fact,
+      1 explained.
+      1 experiment
+      1 experiences
+      1 experienced
+      1 examples
+      1 examination
+      1 events
+      1 event,
+      1 even
+      1 euphoric
+      1 essentially
+      1 especially
+      1 entertaining
+      1 ensemble
+      1 enjoying
+      1 enjoy
+      1 employer
+      1 employed
+      1 embroiled
+      1 elation
+      1 disappointed.
+      1 did--not
+      1 detective
+      1 detailed.
+      1 despair
+      1 describing
+      1 described
+      1 describe
+      1 deliver
+      1 definitely
+      1 deeper
+      1 decided
+      1 deceit
+      1 deals
+      1 deal
+      1 days.
+      1 day.
+      1 dad's
+      1 dad
+      1 d'etre
+      1 cursory
+      1 criticized
+      1 could
+      1 consists
+      1 considered
+      1 confusing
+      1 confuses
+      1 concise
+      1 comprehends
+      1 complex
+      1 completely
+      1 complements
+      1 complaints
+      1 complaint
+      1 complain
+      1 comments
+      1 comment
+      1 coming
+      1 closet.
+      1 clear
+      1 choice
+      1 chilling
+      1 children
+      1 childhood,
+      1 certian
+      1 cast
+      1 can't
+      1 buyers
+      1 brevity,
+      1 brain,
+      1 boring
+      1 boook
+      1 books&lt;/a>,
+      1 bizarre.
+      1 bizarre,
+      1 benefits,
+      1 become
+      1 because
+      1 basic,
+      1 basic
+      1 based
+      1 away,
+      1 author
+      1 audience
+      1 arrival
+      1 around
+      1 apart.
+      1 anyone
+      1 any
+      1 annoying
+      1 analyze.\\"
+      1 an
+      1 always
+      1 alot
+      1 agree
+      1 ago.Though
+      1 ago.
+      1 age
+      1 after
+      1 actual
+      1 abut
+      1 abandoning
+      1 \\"promised
+      1 \\"never
+      1 \\"lucky\\"
+      1 \\"lucked
+      1 \\"defeats\\"
+      1 \\"PW
+      1 You
+      1 Year,
+      1 Woman
+      1 When
+      1 Weekly
+      1 Webb
+      1 Victoria,
+      1 University
+      1 To
+      1 Thus,
+      1 Though
+      1 Tasha.Former
+      1 Soon
+      1 Some
+      1 She
+      1 Rutland
+      1 Review
+      1 Publisher's
+      1 Prep
+      1 Phoenix
+      1 Philosophy
+      1 PROTECTIVE
+      1 North
+      1 Never
+      1 My
+      1 Ms.
+      1 Mary
+      1 Marks
+      1 Marelyn
+      1 Klausner
+      1 Kay,
+      1 James,
+      1 If
+      1 Holden's
+      1 Holden
+      1 Hastings
+      1 HAD
+      1 Guide.
+      1 Girl's
+      1 FROM
+      1 FILES
+      1 Ehrenreich's
+      1 Ehrenreich
+      1 ENTER
+      1 Colby-Camp
+      1 Caulfield's
+      1 CUSTODY).
+      1 CONSPIRACY
+      1 But
+      1 Bad
+      1 BODYGUARD'S
+      1 BABY
+      1 As
+      1 Also
+      1 AGENCY:
+      1 AFLAC
+      1 A-game.Harriet
+      1 A
+      1 3
+      1 251.
+      1 (see
+      1 (presumably)
+      1 'midlevel
+      1 &lt;a
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ tr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Psed 's/\<.\> \?//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[18P[1P amazon_reviews_us_Books_v1_02.REVIEWBODY.tsvsed 's/(?:\s\w\b|\b\w\s)//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+review_body
+this boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.
+If you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.
+never read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say
+Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape a pregnant Tasha.Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father a veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman's long ago murdered first husband James, and her dad's first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'S BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  A final twist marks a strong Webb of deceit tale that showcases a fine author on her A-game.Harriet Klausner
+Review based on a cursory examination by University of Phoenix students in Philosophy 251.  We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in a clear and concise manner. We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. 
+My only complaint is that this book was a bit repetative, and Holden's vocabulary only consists of 4 words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.It was easy to read and to relate to, so you should pick it up if you're looking for a fun read. Some people complain about the lack of a plot, but to understand this book you need to read deeper into it. It's actually a lot more than some annoying kid's list of complaints about life.The story is about Holden Caulfield's coming of age and realizing that growing up is not a process that can be stopped. He had a lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from a mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those 3 days.
+This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  I was sort of surprised however by the comment in Publisher's Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can't deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  I never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, I actually thought that she \\"lucked out\\" in a sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained a job right away, it would have taken away the whole raison d'etre of the book.  It would have been a completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, I think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, I thought those comments were bizarre.  I agree with Ms. Ehrenreich's point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it's really a pretty scary and depressing book, but one which I recommend.
+When looking for &lt;a href=\\"[...]\\">lock picking books&lt;/a>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not a romance novel, it's how to open locks without keys, and that's it. You will learn what you need to here. But you should always seek out more knowledge.
+Never been much for enjoying history, but the style, brevity, and choice of subject matter come together very nicely in this book.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ sed 's/(?:\s\w\b|\b\w\s)//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r
+     54 the
+     40 and
+     32 to
+     28 
+     26 of
+     24 in
+     23 a
+     22 that
+     17 is
+     16 was
+     13 she
+     12 for
+     10 you
+     10 this
+     10 it
+     10 book
+      8 her
+      7 will
+      7 they
+      7 more
+      7 he
+      7 but
+      7 be
+      7 as
+      7 about
+      7 I
+      6 would
+      6 which
+      6 what
+      6 one
+      6 on
+      6 no
+      5 with
+      5 story
+      5 pants
+      5 out
+      5 only
+      5 not
+      5 have
+      5 first
+      5 can
+      5 by
+      5 are
+      5 all
+      4 who
+      4 very
+      4 up
+      4 their
+      4 really
+      4 read
+      4 looking
+      4 if
+      4 his
+      4 from
+      4 been
+      4 at
+      4 The
+      4 4
+      3 while
+      3 were
+      3 well
+      3 thought
+      3 those
+      3 things
+      3 these
+      3 them
+      3 such
+      3 something
+      3 some
+      3 so
+      3 never
+      3 make
+      3 learn
+      3 it.
+      3 how
+      3 girls
+      3 bit
+      3 actually
+      3 Victoria
+      3 Seth
+      3 Jim
+      3 It
+      3 He
+      3 Daniel
+      2 your
+      2 world
+      2 whose
+      2 when
+      2 wearing
+      2 way
+      2 wants
+      2 two
+      2 try
+      2 though
+      2 than
+      2 takes
+      2 summer
+      2 strong
+      2 somehow
+      2 should
+      2 sense
+      2 right
+      2 realize
+      2 reader
+      2 point
+      2 placed
+      2 pick
+      2 over
+      2 once
+      2 need
+      2 my
+      2 much
+      2 mental
+      2 manner.
+      2 lousy
+      2 like
+      2 life
+      2 it's
+      2 into
+      2 home
+      2 him.
+      2 here.
+      2 has
+      2 had
+      2 great
+      2 good
+      2 going
+      2 give
+      2 found
+      2 finds
+      2 easy
+      2 differnt
+      2 different
+      2 did.
+      2 did
+      2 depressing
+      2 decades
+      2 day
+      2 corporate
+      2 come
+      2 book.
+      2 book,
+      2 best
+      2 being
+      2 back
+      2 away
+      2 also
+      2 almost
+      2 ago
+      2 \\"jobs\\"
+      2 We
+      2 This
+      2 Tasha
+      2 THE
+      2 It's
+      2 In
+      2 However,
+      2 Emily
+      2 Colby
+      2 Chicago
+      2 COLBY
+      2 Agency
+      1 yuorself.
+      1 yuor
+      1 young
+      1 you're
+      1 you'll
+      1 years
+      1 written
+      1 writing
+      1 write
+      1 world'
+      1 worked
+      1 words:
+      1 wondering
+      1 woman's
+      1 without
+      1 with.
+      1 whole
+      1 whatsoever
+      1 wanted
+      1 want
+      1 vocabulary
+      1 viewed
+      1 veteran
+      1 values
+      1 use
+      1 upon
+      1 understand
+      1 u
+      1 twist
+      1 twenty
+      1 turned
+      1 turn
+      1 tucked
+      1 tragedy,
+      1 traditional
+      1 town
+      1 together,
+      1 together
+      1 to,
+      1 time.
+      1 time
+      1 throuh
+      1 through.
+      1 through
+      1 thriller
+      1 thought-provoking
+      1 this--no
+      1 think
+      1 thing
+      1 there--and
+      1 there
+      1 them,
+      1 that's
+      1 tells
+      1 telling
+      1 teens
+      1 teaches
+      1 teach
+      1 tales;
+      1 tale
+      1 taking
+      1 taken
+      1 suspense
+      1 suspects
+      1 surreal
+      1 surprised
+      1 supported
+      1 superb
+      1 summers
+      1 subplots
+      1 subject
+      1 style,
+      1 students
+      1 structure
+      1 strategist
+      1 story\\"
+      1 stopped.
+      1 stimulate
+      1 still
+      1 starts
+      1 started
+      1 start
+      1 stars
+      1 sprinkled
+      1 spending
+      1 special.
+      1 special
+      1 sound
+      1 sort
+      1 sonuvabitch,
+      1 son
+      1 solid
+      1 snatched
+      1 slihgtest
+      1 sizes
+      1 since
+      1 silly
+      1 side,
+      1 shown
+      1 showcases
+      1 shapes
+      1 seven
+      1 seems
+      1 seeming
+      1 seeking.
+      1 seek
+      1 school
+      1 scary
+      1 say
+      1 save
+      1 same
+      1 salary,
+      1 said
+      1 rules
+      1 root
+      1 rooms
+      1 romance
+      1 risk
+      1 review_body
+      1 returning
+      1 resurfaced
+      1 repetative,
+      1 relative
+      1 relate
+      1 recommend.
+      1 recently
+      1 reccommend
+      1 reasoning
+      1 realizing
+      1 reading,
+      1 read.
+      1 rather
+      1 rape
+      1 raison
+      1 quite
+      1 puts
+      1 purposes
+      1 proofs
+      1 promised
+      1 process
+      1 probably
+      1 primary
+      1 pretty
+      1 presentable
+      1 pregnant
+      1 popped
+      1 plot,
+      1 places
+      1 place.
+      1 place
+      1 picking
+      1 phony.
+      1 people
+      1 pass
+      1 partner
+      1 pants.\\"
+      1 pants.
+      1 pair
+      1 padlocks,
+      1 overcome
+      1 overall
+      1 out\\"
+      1 other
+      1 organized,
+      1 opening
+      1 open
+      1 office,
+      1 offers
+      1 offered
+      1 of.
+      1 obtained
+      1 obstacles
+      1 novel,
+      1 nose
+      1 nicely
+      1 name
+      1 must
+      1 murdered.
+      1 murdered
+      1 murder
+      1 most
+      1 mind,
+      1 military
+      1 mid-level
+      1 merely
+      1 meet
+      1 me,
+      1 matter
+      1 marks
+      1 many
+      1 managed
+      1 love.
+      1 lot
+      1 long
+      1 logic
+      1 locks
+      1 lives
+      1 little
+      1 list
+      1 linking
+      1 liked
+      1 light,
+      1 life.The
+      1 life.
+      1 letters
+      1 leg
+      1 least
+      1 leading
+      1 laugh,
+      1 language
+      1 laid
+      1 lack
+      1 knowledge.
+      1 knew
+      1 killing
+      1 kids
+      1 kid's
+      1 kicked
+      1 keys,
+      1 just
+      1 jobs
+      1 job,
+      1 job
+      1 it-a
+      1 it,
+      1 issues
+      1 isn't
+      1 interesting.It
+      1 interested.
+      1 institution,
+      1 informative.
+      1 information
+      1 indeed,
+      1 improvement
+      1 imporntantly
+      1 imponrtance
+      1 immediatley
+      1 idicated
+      1 ideas
+      1 i
+      1 husband
+      1 humorous
+      1 humor.
+      1 href=\\"[...]\\">lock
+      1 however
+      1 hope
+      1 honored
+      1 homicide
+      1 history,
+      1 hire
+      1 her.
+      1 help
+      1 having
+      1 hardly
+      1 happened
+      1 growing
+      1 got
+      1 goes
+      1 goddamn,
+      1 goal
+      1 get
+      1 funny
+      1 fun
+      1 from.
+      1 frills
+      1 friends
+      1 frequent
+      1 fourth
+      1 four
+      1 follows
+      1 following
+      1 follow
+      1 flashes
+      1 fit
+      1 first,
+      1 fine
+      1 final
+      1 fell
+      1 feel
+      1 father
+      1 fans
+      1 family
+      1 fact,
+      1 explained.
+      1 experiment
+      1 experiences
+      1 experienced
+      1 examples
+      1 examination
+      1 events
+      1 event,
+      1 even
+      1 euphoric
+      1 essentially
+      1 especially
+      1 entertaining
+      1 ensemble
+      1 enjoying
+      1 enjoy
+      1 employer
+      1 employed
+      1 embroiled
+      1 elation
+      1 disappointed.
+      1 did--not
+      1 detective
+      1 detailed.
+      1 despair
+      1 describing
+      1 described
+      1 describe
+      1 deliver
+      1 definitely
+      1 deeper
+      1 decided
+      1 deceit
+      1 deals
+      1 deal
+      1 days.
+      1 day.
+      1 dad's
+      1 dad
+      1 d'etre
+      1 cursory
+      1 criticized
+      1 could
+      1 consists
+      1 considered
+      1 confusing
+      1 confuses
+      1 concise
+      1 comprehends
+      1 complex
+      1 completely
+      1 complements
+      1 complaints
+      1 complaint
+      1 complain
+      1 comments
+      1 comment
+      1 coming
+      1 closet.
+      1 clear
+      1 choice
+      1 chilling
+      1 children
+      1 childhood,
+      1 certian
+      1 cast
+      1 can't
+      1 buyers
+      1 brevity,
+      1 brain,
+      1 boring
+      1 boook
+      1 books&lt;/a>,
+      1 bizarre.
+      1 bizarre,
+      1 benefits,
+      1 become
+      1 because
+      1 basic,
+      1 basic
+      1 based
+      1 away,
+      1 author
+      1 audience
+      1 arrival
+      1 around
+      1 apart.
+      1 anyone
+      1 any
+      1 annoying
+      1 analyze.\\"
+      1 an
+      1 always
+      1 alot
+      1 agree
+      1 ago.Though
+      1 ago.
+      1 age
+      1 after
+      1 actual
+      1 abut
+      1 abandoning
+      1 \\"promised
+      1 \\"never
+      1 \\"lucky\\"
+      1 \\"lucked
+      1 \\"defeats\\"
+      1 \\"PW
+      1 You
+      1 Year,
+      1 Woman
+      1 When
+      1 Weekly
+      1 Webb
+      1 Victoria,
+      1 University
+      1 To
+      1 Thus,
+      1 Though
+      1 Tasha.Former
+      1 Soon
+      1 Some
+      1 She
+      1 Rutland
+      1 Review
+      1 Publisher's
+      1 Prep
+      1 Phoenix
+      1 Philosophy
+      1 PROTECTIVE
+      1 North
+      1 Never
+      1 My
+      1 Ms.
+      1 Mary
+      1 Marks
+      1 Marelyn
+      1 Klausner
+      1 Kay,
+      1 James,
+      1 If
+      1 Holden's
+      1 Holden
+      1 Hastings
+      1 HAD
+      1 Guide.
+      1 Girl's
+      1 FROM
+      1 FILES
+      1 Ehrenreich's
+      1 Ehrenreich
+      1 ENTER
+      1 Colby-Camp
+      1 Caulfield's
+      1 CUSTODY).
+      1 CONSPIRACY
+      1 But
+      1 Bad
+      1 BODYGUARD'S
+      1 BABY
+      1 As
+      1 Also
+      1 AGENCY:
+      1 AFLAC
+      1 A-game.Harriet
+      1 A
+      1 3
+      1 251.
+      1 (see
+      1 (presumably)
+      1 'midlevel
+      1 &lt;a
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ tr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Psed 's/(?:\s\w\b|\b\w\s)//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+review_body
+this boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.
+If you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.
+never read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say
+Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape a pregnant Tasha.Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father a veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman's long ago murdered first husband James, and her dad's first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'S BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  A final twist marks a strong Webb of deceit tale that showcases a fine author on her A-game.Harriet Klausner
+Review based on a cursory examination by University of Phoenix students in Philosophy 251.  We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in a clear and concise manner. We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. 
+My only complaint is that this book was a bit repetative, and Holden's vocabulary only consists of 4 words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.It was easy to read and to relate to, so you should pick it up if you're looking for a fun read. Some people complain about the lack of a plot, but to understand this book you need to read deeper into it. It's actually a lot more than some annoying kid's list of complaints about life.The story is about Holden Caulfield's coming of age and realizing that growing up is not a process that can be stopped. He had a lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from a mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those 3 days.
+This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  I was sort of surprised however by the comment in Publisher's Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can't deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  I never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, I actually thought that she \\"lucked out\\" in a sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained a job right away, it would have taken away the whole raison d'etre of the book.  It would have been a completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, I think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, I thought those comments were bizarre.  I agree with Ms. Ehrenreich's point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it's really a pretty scary and depressing book, but one which I recommend.
+When looking for &lt;a href=\\"[...]\\">lock picking books&lt;/a>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not a romance novel, it's how to open locks without keys, and that's it. You will learn what you need to here. But you should always seek out more knowledge.
+Never been much for enjoying history, but the style, brevity, and choice of subject matter come together very nicely in this book.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ sed 's/\<.\> \?//g' amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+review_body
+this boook was great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  would give this book stars and would reccommend it to anyone who seems the slihgtest bit interested.
+If you are looking for something to stimulate your brain, this isn'it.  However, if you are just looking for good laugh, you'll enjoy The Bad Girl'Guide.  It'funny and light, and definitely good way to pass little bit of time.
+never read it-young relative idicated he liked it and somehow my name popped upon this--no more to say
+Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape pregnant Tasha.Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman'long ago murdered first husband James, and her dad'first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  final twist marks strong Webb of deceit tale that showcases fine author on her -game.Harriet Klausner
+Review based on cursory examination by University of Phoenix students in Philosophy 251.  We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in clear and concise manner. We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. 
+My only complaint is that this book was bit repetative, and Holden'vocabulary only consists of words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.It was easy to read and to relate to, so you should pick it up if you're looking for fun read. Some people complain about the lack of plot, but to understand this book you need to read deeper into it. It'actually lot more than some annoying kid'list of complaints about life.The story is about Holden Caulfield'coming of age and realizing that growing up is not process that can be stopped. He had lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those days.
+This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  was sort of surprised however by the comment in Publisher'Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can'deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, actually thought that she \\"lucked out\\" in sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained job right away, it would have taken away the whole raison 'etre of the book.  It would have been completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, thought those comments were bizarre.  agree with Ms. Ehrenreich'point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it'really pretty scary and depressing book, but one which recommend.
+When looking for &lt;href=\\"[...]\\">lock picking books&lt;/>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not romance novel, it'how to open locks without keys, and that'it. You will learn what you need to here. But you should always seek out more knowledge.
+Never been much for enjoying history, but the style, brevity, and choice of subject matter come together very nicely in this book.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ car[Kt  amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+review_body
+this boook was a great one that you could learn from. it not only teaches the imponrtance of family and their values but it also deals with basic issues that teens and some kids even deal with.  this book is about 4 best friends who are for the first time in their lives spending their summer apart. one day they are all in one of the girls rooms and finds a pair of pants that were tucked away in her closet.  once all four  of them try them on they realize that there is really something special about these pants.  seeming as how all 4 girls are differnt shapes and sizes and somehow the pants fit all of them,  they realize that these pants were the start of something special.  immediatley following they decided to make up certian rules abut the pants such as you must write the best thing u did while wearing the pants over your summer on the right leg and also some silly things such as to \\"never pick yuor nose while wearing the pants.\\"  this book follows the girls throuh their summers in differnt places of the world and through all of the different obstacles that life takes them through. it can really teach you alot not only about what is going on around you but most imporntantly about yuorself.  i would give this book 4 stars and would reccommend it to anyone who seems the slihgtest bit interested.
+If you are looking for something to stimulate your brain, this isn't it.  However, if you are just looking for a good laugh, you'll enjoy The Bad Girl's Guide.  It's funny and light, and definitely a good way to pass a little bit of time.
+never read it-a young relative idicated he liked it and somehow my name popped upon this--no more to say
+Though she is honored to be Chicago Woman of the Year, Victoria Colby-Camp is more euphoric over the mental improvement that her son Jim has shown recently especially since he and Tasha North fell in love.  Jim was snatched almost twenty years ago when he was seven and turned into the killing Seth whose goal was to murder Victoria for abandoning him.  However, her elation would turn to despair if she knew Seth resurfaced and started to rape a pregnant Tasha.Former military strategist Daniel Marks is in town complements of the Colby Agency that wants to hire him.  Also in Chicago is Emily Hastings whose father a veteran homicide detective was murdered.  She finds letters linking her dad to Victoria, the woman's long ago murdered first husband James, and her dad's first partner Marelyn Rutland that confuses her.  Soon she will meet Daniel and they will be embroiled in the COLBY CONSPIRACY that goes back almost two decades ago.Though the subplots can become confusing at first, once the audience comprehends how this complex superb suspense thriller starts to come together, they will want more Colby Agency tales; (see FILES FROM THE COLBY AGENCY: THE BODYGUARD'S BABY PROTECTIVE CUSTODY).  The ensemble cast is solid as fans will feel with Victoria who has overcome so much tragedy, hope Jim \\"defeats\\" Seth with Tasha at his side, and root for Daniel and Emily to make it while wondering what really happened two decades ago.  A final twist marks a strong Webb of deceit tale that showcases a fine author on her A-game.Harriet Klausner
+Review based on a cursory examination by University of Phoenix students in Philosophy 251.  We have found the book to be well organized, and detailed. The structure placed the information in an easy to read and presentable manner. The use of strong and sound proofs by experiment and examples supported the overall logic of reasoning in a clear and concise manner. We have found the book to be well thought out and laid out so the reader can learn and follow what is being explained. 
+My only complaint is that this book was a bit repetative, and Holden's vocabulary only consists of 4 words: sonuvabitch, goddamn, lousy and phony. It was still quite humorous and the actual story was interesting.It was easy to read and to relate to, so you should pick it up if you're looking for a fun read. Some people complain about the lack of a plot, but to understand this book you need to read deeper into it. It's actually a lot more than some annoying kid's list of complaints about life.The story is about Holden Caulfield's coming of age and realizing that growing up is not a process that can be stopped. He had a lousy childhood, as he puts it, and wants to save other children from going though the things he experienced in his life. He is telling the story from a mental institution, which he was placed in after returning home from the fourth Prep school he had been kicked out of. He flashes back to the events leading up to his arrival at his home and tells the story of those 3 days.
+This book is chilling and depressing indeed, though very well written and sprinkled with frequent humor.  I was sort of surprised however by the comment in Publisher's Weekly which said that \\"PW suspects that many of those buyers will be disappointed. Ehrenreich can't deliver the promised story because she never managed to get employed in the 'midlevel corporate world' she wanted to analyze.\\"  I never viewed that as being the \\"promised story\\" in the first place.  To me, the primary point of the book was to describe what it was like to actually try to ENTER that world in the first place rather than describing what life was like when she got there--and that she did.  In fact, I actually thought that she \\"lucked out\\" in a sense by having the bizarre, surreal experiences she did--not only did it make for more entertaining and more thought-provoking reading, but in my mind, if she HAD obtained a job right away, it would have taken away the whole raison d'etre of the book.  It would have been a completely different book in which she merely described her (presumably) boring mid-level corporate job, which probably would have been the same from day to day.  Thus, at least for purposes of writing the book, I think she was \\"lucky\\" that things worked out the way they did.  As for the reader who criticized her for not taking the \\"jobs\\" offered by AFLAC and Mary Kay, I thought those comments were bizarre.  I agree with Ms. Ehrenreich's point in that \\"jobs\\" such as these in which the employer offers no salary, no benefits, no office, no help and essentially takes no risk whatsoever can hardly be considered jobs in the traditional sense she was seeking.  In any event, it's really a pretty scary and depressing book, but one which I recommend.
+When looking for &lt;a href=\\"[...]\\">lock picking books&lt;/a>, this one is very informative. It will give one great ideas on opening padlocks, but the language is very basic, no frills here. This is not a romance novel, it's how to open locks without keys, and that's it. You will learn what you need to here. But you should always seek out more knowledge.
+Never been much for enjoying history, but the style, brevity, and choice of subject matter come together very nicely in this book.
+]0;rahman@f6linux20: ~/A3rahman@f6linux20:~/A3$ cat  amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15@sed 's/\<.\> \?//g'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9@(?:\s\w\b|\b\w\s)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctr " " "\n" < amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv| sort| uniq -c | sort -n -r[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[44@amazon_reviews_us_Books_v1_02.REVIEWBODY.tsv
+     54 the
+     40 and
+     32 to
+     28 
+     26 of
+     24 in
+     23 a
+     22 that
+     17 is
+     16 was
+     13 she
+     12 for
+     10 you
+     10 this
+     10 it
+     10 book
+      8 her
+      7 will
+      7 they
+      7 more
+      7 he
+      7 but
+      7 be
+      7 as
+      7 about
+      7 I
+      6 would
+      6 which
+      6 what
+      6 one
+      6 on
+      6 no
+      5 with
+      5 story
+      5 pants
+      5 out
+      5 only
+      5 not
+      5 have
+      5 first
+      5 can
+      5 by
+      5 are
+      5 all
+      4 who
+      4 very
+      4 up
+      4 their
+      4 really
+      4 read
+      4 looking
+      4 if
+      4 his
+      4 from
+      4 been
+      4 at
+      4 The
+      4 4
+      3 while
+      3 were
+      3 well
+      3 thought
+      3 those
+      3 things
+      3 these
+      3 them
+      3 such
+      3 something
+      3 some
+      3 so
+      3 never
+      3 make
+      3 learn
+      3 it.
+      3 how
+      3 girls
+      3 bit
+      3 actually
+      3 Victoria
+      3 Seth
+      3 Jim
+      3 It
+      3 He
+      3 Daniel
+      2 your
+      2 world
+      2 whose
+      2 when
+      2 wearing
+      2 way
+      2 wants
+      2 two
+      2 try
+      2 though
+      2 than
+      2 takes
+      2 summer
+      2 strong
+      2 somehow
+      2 should
+      2 sense
+      2 right
+      2 realize
+      2 reader
+      2 point
+      2 placed
+      2 pick
+      2 over
+      2 once
+      2 need
+      2 my
+      2 much
+      2 mental
+      2 manner.
+      2 lousy
+      2 like
+      2 life
+      2 it's
+      2 into
+      2 home
+      2 him.
+      2 here.
+      2 has
+      2 had
+      2 great
+      2 good
+      2 going
+      2 give
+      2 found
+      2 finds
+      2 easy
+      2 differnt
+      2 different
+      2 did.
+      2 did
+      2 depressing
+      2 decades
+      2 day
+      2 corporate
+      2 come
+      2 book.
+      2 book,
+      2 best
+      2 being
+      2 back
+      2 away
+      2 also
+      2 almost
+      2 ago
+      2 \\"jobs\\"
+      2 We
+      2 This
+      2 Tasha
+      2 THE
+      2 It's
+      2 In
+      2 However,
+      2 Emily
+      2 Colby
+      2 Chicago
+      2 COLBY
+      2 Agency
+      1 yuorself.
+      1 yuor
+      1 young
+      1 you're
+      1 you'll
+      1 years
+      1 written
+      1 writing
+      1 write
+      1 world'
+      1 worked
+      1 words:
+      1 wondering
+      1 woman's
+      1 without
+      1 with.
+      1 whole
+      1 whatsoever
+      1 wanted
+      1 want
+      1 vocabulary
+      1 viewed
+      1 veteran
+      1 values
+      1 use
+      1 upon
+      1 understand
+      1 u
+      1 twist
+      1 twenty
+      1 turned
+      1 turn
+      1 tucked
+      1 tragedy,
+      1 traditional
+      1 town
+      1 together,
+      1 together
+      1 to,
+      1 time.
+      1 time
+      1 throuh
+      1 through.
+      1 through
+      1 thriller
+      1 thought-provoking
+      1 this--no
+      1 think
+      1 thing
+      1 there--and
+      1 there
+      1 them,
+      1 that's
+      1 tells
+      1 telling
+      1 teens
+      1 teaches
+      1 teach
+      1 tales;
+      1 tale
+      1 taking
+      1 taken
+      1 suspense
+      1 suspects
+      1 surreal
+      1 surprised
+      1 supported
+      1 superb
+      1 summers
+      1 subplots
+      1 subject
+      1 style,
+      1 students
+      1 structure
+      1 strategist
+      1 story\\"
+      1 stopped.
+      1 stimulate
+      1 still
+      1 starts
+      1 started
+      1 start
+      1 stars
+      1 sprinkled
+      1 spending
+      1 special.
+      1 special
+      1 sound
+      1 sort
+      1 sonuvabitch,
+      1 son
+      1 solid
+      1 snatched
+      1 slihgtest
+      1 sizes
+      1 since
+      1 silly
+      1 side,
+      1 shown
+      1 showcases
+      1 shapes
+      1 seven
+      1 seems
+      1 seeming
+      1 seeking.
+      1 seek
+      1 school
+      1 scary
+      1 say
+      1 save
+      1 same
+      1 salary,
+      1 said
+      1 rules
+      1 root
+      1 rooms
+      1 romance
+      1 risk
+      1 review_body
+      1 returning
+      1 resurfaced
+      1 repetative,
+      1 relative
+      1 relate
+      1 recommend.
+      1 recently
+      1 reccommend
+      1 reasoning
+      1 realizing
+      1 reading,
+      1 read.
+      1 rather
+      1 rape
+      1 raison
+      1 quite
+      1 puts
+      1 purposes
+      1 proofs
+      1 promised
+      1 process
+      1 probably
+      1 primary
+      1 pretty
+      1 presentable
+      1 pregnant
+      1 popped
+      1 plot,
+      1 places
+      1 place.
+      1 place
+      1 picking
+      1 phony.
+      1 people
+      1 pass
+      1 partner
+      1 pants.\\"
+      1 pants.
+      1 pair
+      1 padlocks,
+      1 overcome
+      1 overall
+      1 out\\"
+      1 other
+      1 organized,
+      1 opening
+      1 open
+      1 office,
+      1 offers
+      1 offered
+      1 of.
+      1 obtained
+      1 obstacles
+      1 novel,
+      1 nose
+      1 nicely
+      1 name
+      1 must
+      1 murdered.
+      1 murdered
+      1 murder
+      1 most
+      1 mind,
+      1 military
+      1 mid-level
+      1 merely
+      1 meet
+      1 me,
+      1 matter
+      1 marks
+      1 many
+      1 managed
+      1 love.
+      1 lot
+      1 long
+      1 logic
+      1 locks
+      1 lives
+      1 little
+      1 list
+      1 linking
+      1 liked
+      1 light,
+      1 life.The
+      1 life.
+      1 letters
+      1 leg
+      1 least
+      1 leading
+      1 laugh,
+      1 language
+      1 laid
+      1 lack
+      1 knowledge.
+      1 knew
+      1 killing
+      1 kids
+      1 kid's
+      1 kicked
+      1 keys,
+      1 just
+      1 jobs
+      1 job,
+      1 job
+      1 it-a
+      1 it,
+      1 issues
+      1 isn't
+      1 interesting.It
+      1 interested.
+      1 institution,
+      1 informative.
+      1 information
+      1 indeed,
+      1 improvement
+      1 imporntantly
+      1 imponrtance
+      1 immediatley
+      1 idicated
+      1 ideas
+      1 i
+      1 husband
+      1 humorous
+      1 humor.
+      1 href=\\"[...]\\">lock
+      1 however
+      1 hope
+      1 honored
+      1 homicide
+      1 history,
+      1 hire
+      1 her.
+      1 help
+      1 having
+      1 hardly
+      1 happened
+      1 growing
+      1 got
+      1 goes
+      1 goddamn,
+      1 goal
+      1 get
+      1 funny
+      1 fun
+      1 from.
+      1 frills
+      1 friends
+      1 frequent
+      1 fourth
+      1 four
+      1 follows
+      1 following
+      1 follow
+      1 flashes
+      1 fit
+      1 first,
+      1 fine
+      1 final
+      1 fell
+      1 feel
+      1 father
+      1 fans
+      1 family
+      1 fac

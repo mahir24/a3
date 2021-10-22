@@ -1,0 +1,1018 @@
+Script started on 2021-10-19 23:14:23+00:00 [TERM="screen" TTY="/dev/pts/1" COLUMNS="211" LINES="60"]
+rahman@f6linux20:~/A3$ l
+total 12
+4 drwxr-xr-x 15 rahman rahman 4096 Oct 19 22:40 ..
+4 drwxrwxr-x  2 rahman rahman 4096 Oct 19 23:14 CUSTOMERS
+0 -rw-rw-r--  1 rahman rahman    0 Oct 19 23:14 a3.txt
+4 drwxrwxr-x  3 rahman rahman 4096 Oct 19 23:14 .
+rahman@f6linux20:~/A3$ https://lifeat.io/?email=mahirrahman2448@hotmail.com[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ..
+rahman@f6linux20:~$ cd A2
+rahman@f6linux20:~/A2$ cdp [K[K[Kp -r PRODUCTS ~/A3
+rahman@f6linux20:~/A2$ cd ../Ar[K3
+rahman@f6linux20:~/A3$ l
+total 24
+ 4 drwxr-xr-x 15 rahman rahman  4096 Oct 19 22:40 ..
+ 4 drwxrwxr-x  2 rahman rahman  4096 Oct 19 23:14 CUSTOMERS
+ 0 -rw-rw-r--  1 rahman rahman     0 Oct 19 23:14 a3.txt
+ 4 drwxrwxr-x  4 rahman rahman  4096 Oct 20 00:50 .
+12 drwxrwxr-x  3 rahman rahman 12288 Oct 20 00:50 PRODUCTS
+rahman@f6linux20:~/A3$ cd PRODUCTS
+rahman@f6linux20:~/A3/PRODUCTS$ l
+total 572
+ 4 drwxrwxr-x 4 rahman rahman  4096 Oct 20 00:50 ..
+ 4 -rw-rw-r-- 1 rahman rahman  2950 Oct 20 00:50 0060193395.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4335 Oct 20 00:50 0060392452.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2474 Oct 20 00:50 0060514558.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3032 Oct 20 00:50 0060761288.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  6740 Oct 20 00:50 0060582510.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3029 Oct 20 00:50 0060763957.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3063 Oct 20 00:50 0142001740.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2434 Oct 20 00:50 014131088X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2224 Oct 20 00:50 014028009X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2445 Oct 20 00:50 0140177396.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2633 Oct 20 00:50 0066214130.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2460 Oct 20 00:50 0062502182.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2769 Oct 20 00:50 0060987103.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3085 Oct 20 00:50 0060938455.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3485 Oct 20 00:50 0060930535.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2698 Oct 20 00:50 0060928336.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3314 Oct 20 00:50 0060875410.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  5908 Oct 20 00:50 0316769487.helpfulnessReviews.txt
+12 -rw-rw-r-- 1 rahman rahman  8238 Oct 20 00:50 0316666343.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2350 Oct 20 00:50 0316601950.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2494 Oct 20 00:50 0316011770.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  7399 Oct 20 00:50 0312864590.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3393 Oct 20 00:50 0312864256.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2343 Oct 20 00:50 0312857691.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3259 Oct 20 00:50 0312278586.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  4041 Oct 20 00:50 0312195516.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3286 Oct 20 00:50 0310205719.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3785 Oct 20 00:50 0156027321.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3296 Oct 20 00:50 0385337116.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2482 Oct 20 00:50 0385335482.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  6076 Oct 20 00:50 038529929X.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4480 Oct 20 00:50 0375826688.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2279 Oct 20 00:50 0374332657.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2429 Oct 20 00:50 0345417623.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2455 Oct 20 00:50 0345342968.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2204 Oct 20 00:50 0345340426.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2842 Oct 20 00:50 0385497466.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4452 Oct 20 00:50 0385484518.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4938 Oct 20 00:50 0439064864.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2714 Oct 20 00:50 0425198243.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2536 Oct 20 00:50 0399501487.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2413 Oct 20 00:50 0399150897.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2734 Oct 20 00:50 039915079X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3214 Oct 20 00:50 039914563X.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4711 Oct 20 00:50 0399144463.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2957 Oct 20 00:50 0399142789.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2326 Oct 20 00:50 0393317552.helpfulnessReviews.txt
+12 -rw-rw-r-- 1 rahman rahman 10784 Oct 20 00:50 0385504209.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2424 Oct 20 00:50 038550120X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3023 Oct 20 00:50 0440219078.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2327 Oct 20 00:50 0440212561.helpfulnessReviews.txt
+12 -rw-rw-r-- 1 rahman rahman  8507 Oct 20 00:50 0439784549.helpfulnessReviews.txt
+20 -rw-rw-r-- 1 rahman rahman 18647 Oct 20 00:50 043935806X.helpfulnessReviews.txt
+16 -rw-rw-r-- 1 rahman rahman 15077 Oct 20 00:50 0439139597.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  5576 Oct 20 00:50 0439136350.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  5249 Oct 20 00:50 0446677450.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3262 Oct 20 00:50 0446672211.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2385 Oct 20 00:50 0446608955.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3430 Oct 20 00:50 0446532231.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  6050 Oct 20 00:50 044652252X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3144 Oct 20 00:50 0446310786.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2865 Oct 20 00:50 0440414806.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2300 Oct 20 00:50 0451526341.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2863 Oct 20 00:50 0451524934.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3178 Oct 20 00:50 0451191145.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2640 Oct 20 00:50 0449004023.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3184 Oct 20 00:50 059035342X.helpfulnessReviews.txt
+12 -rw-rw-r-- 1 rahman rahman  9548 Oct 20 00:50 0590353403.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3677 Oct 20 00:50 0553573403.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2303 Oct 20 00:50 0553375407.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2559 Oct 20 00:50 0553272535.helpfulnessReviews.txt
+12 -rw-rw-r-- 1 rahman rahman 11716 Oct 20 00:50 0525947647.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2904 Oct 20 00:50 0679735771.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3834 Oct 20 00:50 0679444815.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2806 Oct 20 00:50 0671524313.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4886 Oct 20 00:50 0671027360.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3505 Oct 20 00:50 0671027344.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2998 Oct 20 00:50 0671025368.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2496 Oct 20 00:50 0671021001.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2382 Oct 20 00:50 0609610597.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4818 Oct 20 00:50 0679781587.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  5507 Oct 20 00:50 0842329129.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3554 Oct 20 00:50 0812550706.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2545 Oct 20 00:50 0812548051.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3044 Oct 20 00:50 0812511816.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4674 Oct 20 00:50 0786868716.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2520 Oct 20 00:50 0785263535.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2609 Oct 20 00:50 0743222245.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2702 Oct 20 00:50 0689817851.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2346 Oct 20 00:50 068484267X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2402 Oct 20 00:50 0684801523.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2837 Oct 20 00:50 0895261901.helpfulnessReviews.txt
+16 -rw-rw-r-- 1 rahman rahman 12421 Oct 20 00:50 0895260174.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2663 Oct 20 00:50 1594480001.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2304 Oct 20 00:50 1576734587.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3893 Oct 20 00:50 1558743669.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  7991 Oct 20 00:50 1400050308.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3541 Oct 20 00:50 1400046610.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4208 Oct 20 00:50 0975599518.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3189 Oct 20 00:50 0971453209.helpfulnessReviews.txt
+12 drwxrwxr-x 3 rahman rahman 12288 Oct 20 00:50 .
+ 4 drwxrwxr-x 3 rahman rahman  4096 Oct 20 00:51 starRating
+rahman@f6linux20:~/A3/PRODUCTS$ cat 0971453209.helpfulnessReviews.txt
+1	10
+4	7
+5	4
+1	14
+5	4
+4	1
+4	3
+5	2
+5	9
+1	15
+1	8
+1	9
+5	4
+1	11
+5	6
+1	13
+5	4
+4	1
+1	14
+1	17
+5	5
+5	10
+5	6
+4	4
+1	11
+3	0
+1	16
+5	4
+5	5
+5	6
+5	5
+5	6
+5	4
+5	3
+5	4
+4	4
+5	6
+4	2
+5	4
+5	5
+1	14
+1	154
+1	18
+5	7
+1	16
+3	2
+2	3
+5	2
+5	2
+5	1
+5	5
+4	1
+4	1
+4	2
+4	7
+5	3
+4	4
+1	12
+4	2
+5	5
+4	4
+1	10
+5	7
+5	5
+5	4
+2	14
+1	11
+5	8
+5	17
+5	11
+5	6
+5	5
+5	8
+5	7
+5	7
+5	4
+5	7
+5	8
+5	9
+5	6
+1	5
+5	40
+5	4
+5	6
+4	11
+4	23
+1	7
+4	5
+4	16
+5	4
+1	7
+3	4
+5	4
+4	3
+5	4
+5	6
+5	4
+5	7
+5	10
+5	11
+1	9
+5	10
+5	5
+4	15
+5	6
+5	5
+1	11
+5	9
+4	6
+5	10
+1	13
+4	6
+5	8
+4	6
+5	6
+4	12
+5	11
+1	8
+1	13
+4	5
+5	4
+5	12
+5	11
+5	10
+5	11
+1	10
+2	12
+5	4
+1	9
+4	7
+5	3
+5	2
+1	12
+5	3
+4	8
+5	5
+4	4
+5	1
+5	2
+5	2
+4	5
+5	6
+2	8
+1	12
+5	12
+5	23
+4	11
+1	10
+4	11
+5	11
+1	8
+5	6
+1	15
+1	9
+1	9
+5	4
+5	5
+5	4
+5	7
+5	7
+1	13
+5	7
+5	3
+1	6
+1	7
+5	11
+4	8
+4	6
+5	5
+5	5
+4	4
+5	8
+5	8
+5	14
+5	10
+4	10
+4	9
+5	6
+5	7
+1	15
+1	12
+1	13
+5	5
+5	9
+5	7
+5	4
+5	7
+1	16
+5	9
+2	9
+1	36
+5	3
+1	41
+1	15
+5	4
+5	7
+5	5
+5	2
+5	3
+5	2
+1	20
+1	13
+5	2
+5	3
+1	17
+4	1
+1	15
+1	91
+1	16
+4	3
+1	14
+3	2
+4	6
+5	5
+1	18
+1	16
+5	3
+1	12
+4	6
+1	23
+4	7
+1	9
+1	29
+3	5
+1	24
+2	7
+1	25
+3	6
+1	22
+5	6
+1	17
+5	7
+3	9
+5	10
+1	15
+1	13
+1	11
+5	10
+5	7
+5	32
+1	19
+1	32
+5	4
+5	5
+1	30
+5	8
+1	17
+1	17
+5	4
+5	11
+5	6
+1	16
+5	4
+1	29
+2	9
+5	6
+5	6
+1	118
+5	6
+1	16
+1	14
+1	15
+4	9
+1	17
+5	6
+1	11
+1	11
+5	14
+1	13
+5	5
+5	4
+5	5
+5	8
+5	7
+5	4
+5	3
+5	1
+5	2
+5	2
+5	2
+1	18
+5	2
+5	1
+1	9
+1	19
+5	2
+4	3
+1	8
+1	6
+1	15
+1	15
+5	2
+5	3
+5	4
+4	4
+1	10
+5	8
+5	3
+1	6
+1	16
+1	19
+5	5
+5	4
+4	3
+5	4
+4	2
+5	2
+5	1
+1	15
+5	2
+5	3
+2	10
+5	2
+1	16
+1	14
+5	5
+5	5
+5	6
+1	17
+5	6
+5	5
+1	15
+5	5
+4	5
+1	15
+1	14
+1	18
+1	14
+4	6
+4	7
+1	17
+5	8
+1	15
+1	9
+1	14
+1	26
+5	26
+5	5
+1	17
+5	2
+5	9
+1	23
+5	3
+5	2
+1	12
+5	2
+1	16
+5	2
+1	23
+5	2
+5	4
+5	5
+5	2
+5	3
+1	23
+5	7
+4	3
+1	26
+5	32
+5	5
+1	10
+5	2
+1	29
+5	6
+4	8
+5	6
+1	4
+5	4
+5	4
+5	7
+1	26
+1	26
+5	8
+1	17
+4	8
+1	11
+1	13
+5	8
+5	8
+5	5
+4	8
+1	15
+5	1
+5	12
+1	12
+2	211
+5	4
+1	20
+5	6
+5	4
+1	10
+5	8
+1	14
+5	6
+4	5
+5	6
+5	3
+1	11
+1	9
+5	5
+5	5
+1	13
+5	13
+4	2
+5	1
+1	14
+4	18
+5	9
+3	16
+1	18
+5	8
+2	16
+5	4
+5	7
+1	16
+1	16
+5	7
+1	12
+1	9
+5	9
+1	13
+1	13
+4	10
+1	13
+4	9
+5	6
+5	10
+5	34
+4	10
+5	26
+4	11
+5	19
+5	8
+3	4
+1	18
+4	7
+1	22
+1	12
+5	4
+1	41
+5	3
+5	3
+1	16
+2	9
+1	21
+5	3
+5	4
+5	3
+1	38
+5	4
+1	29
+4	0
+1	52
+5	3
+5	7
+1	18
+1	16
+1	37
+3	5
+1	16
+1	31
+5	5
+5	4
+1	14
+1	21
+4	2
+1	39
+1	27
+1	23
+1	19
+5	5
+1	18
+3	1
+5	7
+5	5
+1	20
+5	4
+5	21
+5	4
+5	7
+4	3
+3	1
+1	16
+4	3
+1	21
+5	3
+5	3
+5	3
+5	4
+5	27
+5	18
+1	16
+3	5
+1	16
+4	3
+5	3
+5	3
+4	3
+5	2
+5	9
+5	11
+5	33
+1	10
+5	3
+1	16
+5	4
+5	6
+1	13
+1	42
+1	9
+1	9
+4	4
+1	21
+5	11
+5	10
+1	12
+1	28
+1	13
+4	4
+1	13
+5	6
+5	28
+3	9
+5	6
+5	4
+1	12
+4	4
+1	9
+1	10
+5	9
+5	5
+4	49
+5	7
+3	5
+5	4
+5	3
+5	4
+5	6
+1	19
+5	8
+5	6
+5	5
+4	4
+5	1
+5	27
+1	8
+1	8
+1	8
+5	5
+1	12
+5	16
+4	3
+5	0
+5	4
+4	3
+1	12
+5	2
+5	1
+5	1
+5	3
+5	5
+4	2
+3	7
+1	13
+1	19
+5	5
+1	17
+5	3
+1	13
+5	9
+4	22
+5	4
+5	1
+5	2
+1	526
+5	8
+5	6
+5	1
+1	8
+5	11
+5	5
+4	1
+1	9
+1	10
+5	1
+1	11
+1	12
+1	14
+5	4
+1	21
+1	12
+2	12
+5	15
+1	12
+1	11
+5	7
+1	12
+1	21
+1	5
+5	4
+4	3
+5	4
+5	4
+5	13
+4	38
+5	12
+4	5
+4	3
+5	5
+5	6
+5	2
+1	27
+5	3
+4	5
+5	5
+5	9
+5	5
+5	6
+1	27
+5	8
+4	3
+5	10
+4	53
+1	12
+1	14
+5	3
+5	7
+5	18
+4	72
+5	19
+1	18
+1	45
+5	2
+1	16
+5	22
+4	1
+1	17
+4	1
+5	2
+5	2
+1	21
+1	18
+1	14
+1	16
+4	12
+4	1
+1	15
+5	7
+4	7
+1	13
+1	18
+3	4
+5	2
+1	11
+1	17
+1	13
+5	1
+1	14
+5	1
+5	5
+1	8
+1	10
+1	74
+5	1
+2	10
+5	6
+4	3
+5	11
+1	3
+5	1
+5	11
+1	75
+5	3
+5	3
+5	17
+4	4
+1	15
+5	4
+5	3
+1	18
+5	9
+2	5
+3	13
+5	4
+5	5
+5	5
+5	21
+5	15
+1	19
+1	18
+1	30
+5	11
+1	29
+1	32
+1	31
+1	27
+1	37
+1	80
+1	3
+1	35
+1	26
+1	50
+1	22
+1	40
+5	5
+1	29
+5	9
+5	4
+5	9
+1	33
+5	5
+5	8
+3	34
+1	30
+1	5
+5	9
+3	5
+1	31
+4	7
+1	27
+4	5
+5	5
+rahman@f6linux20:~/A3/PRODUCTS$ l
+total 572
+ 4 drwxrwxr-x 4 rahman rahman  4096 Oct 20 00:50 ..
+ 4 -rw-rw-r-- 1 rahman rahman  2950 Oct 20 00:50 0060193395.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4335 Oct 20 00:50 0060392452.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2474 Oct 20 00:50 0060514558.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3032 Oct 20 00:50 0060761288.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  6740 Oct 20 00:50 0060582510.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3029 Oct 20 00:50 0060763957.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3063 Oct 20 00:50 0142001740.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2434 Oct 20 00:50 014131088X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2224 Oct 20 00:50 014028009X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2445 Oct 20 00:50 0140177396.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2633 Oct 20 00:50 0066214130.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2460 Oct 20 00:50 0062502182.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2769 Oct 20 00:50 0060987103.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3085 Oct 20 00:50 0060938455.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3485 Oct 20 00:50 0060930535.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2698 Oct 20 00:50 0060928336.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3314 Oct 20 00:50 0060875410.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  5908 Oct 20 00:50 0316769487.helpfulnessReviews.txt
+12 -rw-rw-r-- 1 rahman rahman  8238 Oct 20 00:50 0316666343.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2350 Oct 20 00:50 0316601950.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2494 Oct 20 00:50 0316011770.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  7399 Oct 20 00:50 0312864590.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3393 Oct 20 00:50 0312864256.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2343 Oct 20 00:50 0312857691.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3259 Oct 20 00:50 0312278586.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  4041 Oct 20 00:50 0312195516.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3286 Oct 20 00:50 0310205719.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3785 Oct 20 00:50 0156027321.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3296 Oct 20 00:50 0385337116.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2482 Oct 20 00:50 0385335482.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  6076 Oct 20 00:50 038529929X.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4480 Oct 20 00:50 0375826688.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2279 Oct 20 00:50 0374332657.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2429 Oct 20 00:50 0345417623.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2455 Oct 20 00:50 0345342968.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2204 Oct 20 00:50 0345340426.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2842 Oct 20 00:50 0385497466.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4452 Oct 20 00:50 0385484518.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4938 Oct 20 00:50 0439064864.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2714 Oct 20 00:50 0425198243.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2536 Oct 20 00:50 0399501487.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2413 Oct 20 00:50 0399150897.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2734 Oct 20 00:50 039915079X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3214 Oct 20 00:50 039914563X.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4711 Oct 20 00:50 0399144463.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2957 Oct 20 00:50 0399142789.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2326 Oct 20 00:50 0393317552.helpfulnessReviews.txt
+12 -rw-rw-r-- 1 rahman rahman 10784 Oct 20 00:50 0385504209.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2424 Oct 20 00:50 038550120X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3023 Oct 20 00:50 0440219078.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2327 Oct 20 00:50 0440212561.helpfulnessReviews.txt
+12 -rw-rw-r-- 1 rahman rahman  8507 Oct 20 00:50 0439784549.helpfulnessReviews.txt
+20 -rw-rw-r-- 1 rahman rahman 18647 Oct 20 00:50 043935806X.helpfulnessReviews.txt
+16 -rw-rw-r-- 1 rahman rahman 15077 Oct 20 00:50 0439139597.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  5576 Oct 20 00:50 0439136350.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  5249 Oct 20 00:50 0446677450.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3262 Oct 20 00:50 0446672211.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2385 Oct 20 00:50 0446608955.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3430 Oct 20 00:50 0446532231.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  6050 Oct 20 00:50 044652252X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3144 Oct 20 00:50 0446310786.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2865 Oct 20 00:50 0440414806.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2300 Oct 20 00:50 0451526341.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2863 Oct 20 00:50 0451524934.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3178 Oct 20 00:50 0451191145.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2640 Oct 20 00:50 0449004023.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3184 Oct 20 00:50 059035342X.helpfulnessReviews.txt
+12 -rw-rw-r-- 1 rahman rahman  9548 Oct 20 00:50 0590353403.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3677 Oct 20 00:50 0553573403.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2303 Oct 20 00:50 0553375407.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2559 Oct 20 00:50 0553272535.helpfulnessReviews.txt
+12 -rw-rw-r-- 1 rahman rahman 11716 Oct 20 00:50 0525947647.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2904 Oct 20 00:50 0679735771.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3834 Oct 20 00:50 0679444815.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2806 Oct 20 00:50 0671524313.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4886 Oct 20 00:50 0671027360.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3505 Oct 20 00:50 0671027344.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2998 Oct 20 00:50 0671025368.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2496 Oct 20 00:50 0671021001.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2382 Oct 20 00:50 0609610597.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4818 Oct 20 00:50 0679781587.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  5507 Oct 20 00:50 0842329129.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3554 Oct 20 00:50 0812550706.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2545 Oct 20 00:50 0812548051.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3044 Oct 20 00:50 0812511816.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4674 Oct 20 00:50 0786868716.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2520 Oct 20 00:50 0785263535.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2609 Oct 20 00:50 0743222245.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2702 Oct 20 00:50 0689817851.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2346 Oct 20 00:50 068484267X.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2402 Oct 20 00:50 0684801523.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2837 Oct 20 00:50 0895261901.helpfulnessReviews.txt
+16 -rw-rw-r-- 1 rahman rahman 12421 Oct 20 00:50 0895260174.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2663 Oct 20 00:50 1594480001.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  2304 Oct 20 00:50 1576734587.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3893 Oct 20 00:50 1558743669.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  7991 Oct 20 00:50 1400050308.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3541 Oct 20 00:50 1400046610.helpfulnessReviews.txt
+ 8 -rw-rw-r-- 1 rahman rahman  4208 Oct 20 00:50 0975599518.helpfulnessReviews.txt
+ 4 -rw-rw-r-- 1 rahman rahman  3189 Oct 20 00:50 0971453209.helpfulnessReviews.txt
+12 drwxrwxr-x 3 rahman rahman 12288 Oct 20 00:50 .
+ 4 drwxrwxr-x 3 rahman rahman  4096 Oct 20 00:51 starRating
+rahman@f6linux20:~/A3/PRODUCTS$ [Krahman@f6linux20:~/A3/PRODUCTS$ [Krahman@f6linux20:~/A3/PRODUCTS$ cd.[K  [K..
+rahman@f6linux20:~/A3$ l
+total 44
+ 4 drwxr-xr-x 15 rahman rahman  4096 Oct 19 22:40 ..
+ 4 drwxrwxr-x  2 rahman rahman  4096 Oct 19 23:14 CUSTOMERS
+ 4 drwxrwxr-x  4 rahman rahman  4096 Oct 20 00:50 .
+12 drwxrwxr-x  3 rahman rahman 12288 Oct 20 00:50 PRODUCTS
+20 -rw-rw-r--  1 rahman rahman 20480 Oct 20 00:58 a3.txt
+rahman@f6linux20:~/A3$ cs PRODUCTS
+
+Command 'cs' not found, but can be installed with:
+
+apt install csound
+Please ask your administrator.
+
+rahman@f6linux20:~/A3$ cd PRODCUTS
+bash: cd: PRODCUTS: No such file or directory
+rahman@f6linux20:~/A3$ cd PRODCUTS[K[K[K[K[KDUCCYTS[K[K[K[KTS
+rahman@f6linux20:~/A3/PRODUCTS$ i=0
+rahman@f6linux20:~/A3/PRODUCTS$ median=`sort -n -k 2 0060392452.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[33@0971453209.helpfulnessReviews.txt
+rahman@f6linux20:~/A3/PRODUCTS$ echo $median
+8
+rahman@f6linux20:~/A3/PRODUCTS$ echo $u[Ki
+0
+rahman@f6linux20:~/A3/PRODUCTS$ echo $imedian[K[K[K[K[K[K[K[K[K[K[K[Kmedian=`sort -n -k 2 0971453209.helpfulnessReviews.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci=0[Kmedian=`sort -n -k 2 0971453209.helpfulnessReviews.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[33@1400046610.helpfulnessReviews.txt
+rahman@f6linux20:~/A3/PRODUCTS$ median[K[K[K[K[K[Kmedian=`sort -n -k 2 1400046610.helpfulnessReviews.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $i[K
+0
+rahman@f6linux20:~/A3/PRODUCTS$ echo $imedian=`sort -n -k 2 1400046610.helpfulnessReviews.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $i[K[Kmedian=`sort -n -k 2 0971453209.helpfulnessReviews.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci=0[Kcd PRODUCTSCUTSUCTSi=0[Kmedian=`sort -n -k 2 0971453209.helpfulnessReviews.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kecho $imedian=`sort -n -k 2 1400046610.helpfulnessReviews.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $i[K[Kecho $i[Kmedian
+12
+rahman@f6linux20:~/A3/PRODUCTS$ awk -v median=$median '$2 < median {print $1,0} $2 >= median {print $1,1}' 0060392452.txt > 0060392452.txt.BINARY.txt[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[33@0971453209.helpfulnessReviews.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt0971453209.helpfulnessReviews.txtBINARY.txt[1PBINARY.txt[1PBINARY.txt[1PBINARY.txt
+rahman@f6linux20:~/A3/PRODUCTS$ head 0971453209.helpfulnessReviews.txt 0971453209.helpfulnessReviews.BINARY.txt
+==> 0971453209.helpfulnessReviews.txt <==
+1	10
+4	7
+5	4
+1	14
+5	4
+4	1
+4	3
+5	2
+5	9
+1	15
+
+==> 0971453209.helpfulnessReviews.BINARY.txt <==
+1 0
+4 0
+5 0
+1 1
+5 0
+4 0
+4 0
+5 0
+5 0
+1 1
+rahman@f6linux20:~/A3/PRODUCTS$ [Krahman@f6linux20:~/A3/PRODUCTS$ head 0971453209.helpfulnessReviews.txt 0971453209.helpfulnessReviews.BINARY.txtM[Cawk -v median=$median '$2 < median {print $1,0} $2 >= median {print $1,1}' 0971453209.helpfulnessReviews.txt > 0971453209.helpfulnessReviews.BINARY.txtMM[C[C[C[C[C[C[C[C[Cecho $median[K
+[K
+[KMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci[Kmedian=`sort -n -k 2 1400046610.helpfulnessReviews.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`Mecho $i[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kmedian=`sort -n -k 2 0971453209.helpfulnessReviews.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`Mi=0[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd PRODUCTSCUTSs PRODUCTSl[Kcd ..l[Kcat 0971453209.helpfulnessReviews.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl[Kcd PRODUCTSl[Kcd ../A3p -r PRODUCTS ~/A3d A2[K..l[Kgit push -f origin masterhint: (e.g., 'git pull ...') before pushing again.M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cto the same ref. You may want to first integrate the remote changesM[C[C[C[C[C[C[C[C[C[C[C[C[C(e.g., 'git pull ...') before pushing again.[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pgit push -f origin master
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl[Kcd ..A2p -r PRODUCTS ~/A3[11Pd ../A3l[Kcd PRODUCTSl[Kcat 0971453209.helpfulnessReviews.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl[Kcd ..l[Kcs PRODUCTSd PRODCUTSUCTSi=0[Kmedian=`sort -n -k 2 0971453209.helpfulnessReviews.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`M[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $imedian=`sort -n -k 2 1400046610.helpfulnessReviews.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`Mecho $i[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmedianawk -v median=$median '$2 < median {print $1,0} $2 >= median {print $1,1}' 0971453209.helpfulnessReviews.txt > 0971453209.helpfulnessReviews.BINARY.txtMM[C[C[C[C[C[C[C[C[Chead 0971453209.helpfulnessReviews.txt 0971453209[49P.helpfulnessReviews.BINARY.txt
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CM[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit
+
+Script done on 2021-10-22 00:51:30+00:00 [COMMAND_EXIT_CODE="0"]
